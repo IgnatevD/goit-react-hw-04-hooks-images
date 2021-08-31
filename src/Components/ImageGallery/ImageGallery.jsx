@@ -19,19 +19,8 @@ export default function ImageGallery({ pixabayName }) {
     setPixabay(null);
     setStatus("panding");
     setName(pixabayName);
-    const page = 1;
-    pixAPI
-      .fetchPixabay(pixabayName, page)
-      .then((pixabays) => {
-        setPixabay([...pixabays.hits]);
-        setStatus("resolved");
-        setPage((page) => page + 1);
-        return pixabays.hits;
-      })
-      .catch((error) => {
-        setError(error);
-        setStatus("rejected");
-      });
+
+    fnFetchPixabayAPI(pixabayName);
 
     return () => {
       setPixabay(null);
@@ -44,30 +33,20 @@ export default function ImageGallery({ pixabayName }) {
 
   const newPage = () => {
     setStatus("panding");
-    pixAPI
-      .fetchPixabay(name, page)
-      .then((pixabays) => pixabays.hits)
-      .then((newImg) => {
-        setPixabay((pixabays) => [...pixabays, ...newImg]);
-        setStatus("resolved");
-        setPage((page) => page + 1);
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: "smooth",
-        });
-      })
-      .catch((error) => {
-        setError(error);
-        setStatus("rejected");
-      });
+    fnFetchPixabayAPI(name, page);
   };
 
   const fnFetchPixabayAPI = (name, page = 1) => {
     pixAPI
       .fetchPixabay(name, page)
-      .then((pixabays) => pixabays.hits)
-      .then((newImg) => { if 
-        setPixabay((pixabays) => [...pixabays, ...newImg]);
+      .then((pixabays) => {
+        if (page === 1) setPixabay([...pixabays.hits]);
+        setStatus("resolved");
+        setPage((page) => page + 1);
+        return pixabays.hits;
+      })
+      .then((newImg) => {
+        if (page > 1) setPixabay((pixabays) => [...pixabays, ...newImg]);
         setStatus("resolved");
         setPage((page) => page + 1);
         window.scrollTo({
