@@ -62,6 +62,25 @@ export default function ImageGallery({ pixabayName }) {
       });
   };
 
+  const fnFetchPixabayAPI = (name, page = 1) => {
+    pixAPI
+      .fetchPixabay(name, page)
+      .then((pixabays) => pixabays.hits)
+      .then((newImg) => { if 
+        setPixabay((pixabays) => [...pixabays, ...newImg]);
+        setStatus("resolved");
+        setPage((page) => page + 1);
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      })
+      .catch((error) => {
+        setError(error);
+        setStatus("rejected");
+      });
+  };
+
   if (status === "idle") {
     return <h2 className="title">Введите запрос для поиска изображений</h2>;
   }
