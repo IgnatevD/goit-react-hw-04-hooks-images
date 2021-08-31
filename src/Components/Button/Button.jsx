@@ -1,3 +1,5 @@
+/** @format */
+
 const Button = ({ newPage }) => {
   return (
     <button type="button" className="Button" onClick={newPage}>

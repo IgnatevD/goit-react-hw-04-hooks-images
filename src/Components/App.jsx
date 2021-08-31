@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+/** @format */
+
+import { useState } from "react";
 import PropTypes from "prop-types";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,29 +8,18 @@ import "react-toastify/dist/ReactToastify.css";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import Searchbar from "./Searchbar/Searchbar";
 
-class App extends Component {
-  state = {
-    pixabayName: "",
-  };
+export default function App() {
+  const [pixabayName, setPixabayName] = useState("");
 
-  getFormSubmit = (searcNameForm) => {
-    this.setState({ pixabayName: searcNameForm });
-  };
-
-  render() {
-    const { pixabayName } = this.state;
-    return (
-      <>
-        <Searchbar onGetSubmit={this.getFormSubmit} />
-        <ImageGallery pixabayName={pixabayName} />
-        <ToastContainer />
-      </>
-    );
-  }
+  return (
+    <>
+      <Searchbar onGetSubmit={setPixabayName} />
+      <ImageGallery pixabayName={pixabayName} />
+      <ToastContainer />
+    </>
+  );
 }
 
 App.propTypes = {
   pixabayName: PropTypes.string,
 };
-
-export default App;

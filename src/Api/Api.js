@@ -1,4 +1,6 @@
-function fetchPixabay(nextName, page) {
+/** @format */
+
+function fetchPixabay(nextName, page = 1) {
   const API = "22732940-a59bc7fc166a5b76f0ac36f93";
 
   return fetch(`https://pixabay.com/api/?q=${nextName}&page=${page}&key=${API}&image_type=photo&orientation=horizontal&per_page=12

@@ -1,131 +1,109 @@
-import React, { Component } from "react";
+/** @format */
+
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Loader from "react-loader-spinner";
 import Button from "../Button/Button";
 import ImageGalleryItem from "./ImageGalleryItem/ImageGalleryItem";
 import pixAPI from "../../Api/Api";
 
-class ImageGallery extends Component {
-  state = {
-    pixabay: null,
-    loding: false,
-    error: null,
-    page: 1,
-    status: "idle",
-    name: "",
-  };
+export default function ImageGallery({ pixabayName }) {
+  const [pixabay, setPixabay] = useState(null);
+  const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+  const [status, setStatus] = useState("idle");
+  const [name, setName] = useState("");
 
-  componentDidUpdate(prevProps, prevState) {
-    const nextName = this.props.pixabayName;
-
-    if (prevProps.pixabayName !== nextName) {
-      this.setState({
-        pixabay: null,
-        status: "panding",
-        name: nextName,
+  useEffect(() => {
+    if (!pixabayName) return false;
+    setPixabay(null);
+    setStatus("panding");
+    setName(pixabayName);
+    const page = 1;
+    pixAPI
+      .fetchPixabay(pixabayName, page)
+      .then((pixabays) => {
+        setPixabay([...pixabays.hits]);
+        setStatus("resolved");
+        setPage((page) => page + 1);
+        return pixabays.hits;
+      })
+      .catch((error) => {
+        setError(error);
+        setStatus("rejected");
       });
-      const page = 1;
 
-      pixAPI
-        .fetchPixabay(nextName, page)
-        .then((pixabays) => {
-          this.setState({
-            pixabay: [...pixabays.hits],
-            status: "resolved",
-            page: this.state.page + 1,
-          });
-          return pixabays.hits;
-        })
-        .catch((error) => {
-          this.setState({ error, status: "rejected" });
-        })
-        .finally(() => this.setState({ loding: false }));
-    }
-  }
+    return () => {
+      setPixabay(null);
+      setError(null);
+      setPage(1);
+      setStatus("idle");
+      setName("");
+    };
+  }, [pixabayName]);
 
-  newPage = () => {
-    const { pixabay, name, page } = this.state;
-    this.setState({ status: "panding" });
-
+  const newPage = () => {
+    setStatus("panding");
     pixAPI
       .fetchPixabay(name, page)
       .then((pixabays) => pixabays.hits)
       .then((newImg) => {
-        this.setState({
-          pixabay: [...pixabay, ...newImg],
-          status: "resolved",
-          page: this.state.page + 1,
-        });
+        setPixabay((pixabays) => [...pixabays, ...newImg]);
+        setStatus("resolved");
+        setPage((page) => page + 1);
         window.scrollTo({
           top: document.documentElement.scrollHeight,
           behavior: "smooth",
         });
       })
       .catch((error) => {
-        this.setState({ error, status: "rejected" });
-      })
-      .finally(() => this.setState({ loding: false }));
+        setError(error);
+        setStatus("rejected");
+      });
   };
 
-  СomponentWillUnmount() {
-    this.setState({
-      pixabay: null,
-      loding: false,
-      error: null,
-      page: 1,
-      status: "idle",
-      name: "",
-    });
+  if (status === "idle") {
+    return <h2 className="title">Введите запрос для поиска изображений</h2>;
   }
 
-  render() {
-    const { pixabay, error, status } = this.state;
+  if (status === "rejected") {
+    return <h2>{error.massage}</h2>;
+  }
 
-    if (status === "idle") {
-      return <h2 className="title">Введите запрос для поиска изображений</h2>;
-    }
+  if (status === "resolved") {
+    return (
+      <div className="conteinerImageGallery">
+        <ul className="ImageGallery">
+          {pixabay.map((img) => (
+            <ImageGalleryItem
+              key={img.id}
+              previewURL={img.previewURL}
+              largeImageURL={img.largeImageURL}
+              name={img.tags}
+            />
+          ))}
+        </ul>
+        {pixabay.length && <Button newPage={newPage} />}
+        {!pixabay.length && (
+          <div>Нет изображений по данному запросу - {pixabayName}</div>
+        )}
+      </div>
+    );
+  }
 
-    if (status === "panding") {
-      return (
-        <div className="conteinerLoding">
-          <Loader
-            type="Puff"
-            color="#000000"
-            height={100}
-            width={100}
-            timeout={2000}
-          />
-          <h2 className="titleLoding">Загружаем изображения...</h2>
-        </div>
-      );
-    }
-
-    if (status === "rejected") {
-      return <h2>{error.massage}</h2>;
-    }
-
-    if (status === "resolved") {
-      return (
-        <div className="conteinerImageGallery">
-          <ul className="ImageGallery">
-            {pixabay.map((img) => (
-              <ImageGalleryItem
-                key={img.id}
-                previewURL={img.previewURL}
-                largeImageURL={img.largeImageURL}
-                name={img.tags}
-              />
-            ))}
-          </ul>
-          {pixabay.length && <Button newPage={this.newPage} />}
-          {!pixabay.length && (
-            <div>
-              Нет изображений по данному запросу - {this.props.pixabayName}
-            </div>
-          )}
-        </div>
-      );
-    }
+  if (status === "panding") {
+    return (
+      <div className="conteinerLoding">
+        <Loader
+          type="Puff"
+          color="#000000"
+          height={100}
+          width={100}
+          timeout={2000}
+        />
+        <h2 className="titleLoding">Загружаем изображения...</h2>
+      </div>
+    );
   }
 }
 
@@ -137,5 +115,3 @@ ImageGallery.propTypes = {
   status: PropTypes.string,
   name: PropTypes.string,
 };
-
-export default ImageGallery;

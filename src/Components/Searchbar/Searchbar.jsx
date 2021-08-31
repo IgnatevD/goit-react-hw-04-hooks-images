@@ -1,16 +1,19 @@
-import React, { Component } from "react";
+/** @format */
+
+import { useState } from "react";
 import PropTypes from "prop-types";
 import { toast } from "react-toastify";
 
-class Searchbar extends Component {
-  state = { searcName: "" };
-  getNameChange = (e) => {
-    this.setState({ searcName: e.currentTarget.value.toLowerCase() });
+export default function Searchbar({ onGetSubmit }) {
+  const [searcName, setSearcName] = useState("");
+
+  const getNameChange = (e) => {
+    setSearcName(e.currentTarget.value.toLowerCase());
   };
 
-  getSubmitForm = (e) => {
+  const getSubmitForm = (e) => {
     e.preventDefault();
-    if (this.state.searcName.trim() === "") {
+    if (searcName.trim() === "") {
       return toast.error("Введите слово для поиска", {
         position: "top-right",
         autoClose: 2000,
@@ -21,35 +24,31 @@ class Searchbar extends Component {
         progress: undefined,
       });
     }
-    this.props.onGetSubmit(this.state.searcName);
-    this.setState({ searcName: "" });
+    onGetSubmit(searcName);
+    setSearcName("");
   };
 
-  render() {
-    return (
-      <header className="Searchbar">
-        <form className="SearchForm" onSubmit={this.getSubmitForm}>
-          <button type="submit" className="SearchForm-button">
-            <span className="SearchForm-button-label">Search</span>
-          </button>
+  return (
+    <header className="Searchbar">
+      <form className="SearchForm" onSubmit={getSubmitForm}>
+        <button type="submit" className="SearchForm-button">
+          <span className="SearchForm-button-label">Search</span>
+        </button>
 
-          <input
-            className="SearchForm-input"
-            type="text"
-            value={this.state.searcName}
-            onChange={this.getNameChange}
-            autoComplete="off"
-            autoFocus
-            placeholder="Search images and photos"
-          />
-        </form>
-      </header>
-    );
-  }
+        <input
+          className="SearchForm-input"
+          type="text"
+          value={searcName}
+          onChange={getNameChange}
+          autoComplete="off"
+          autoFocus
+          placeholder="Search images and photos"
+        />
+      </form>
+    </header>
+  );
 }
 
 Searchbar.propTypes = {
   searcName: PropTypes.string,
 };
-
-export default Searchbar;
