@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/yellow-help-kh/static/css/main.c5e101fb.css",
+    "main.js": "/yellow-help-kh/static/js/main.719435cc.js",
+    "static/js/787.e11530e2.chunk.js": "/yellow-help-kh/static/js/787.e11530e2.chunk.js",
+    "static/media/peopleHelp.png": "/yellow-help-kh/static/media/peopleHelp.a31d8ce65b949cb7c0ca.png",
+    "static/media/humanitarianAid.png": "/yellow-help-kh/static/media/humanitarianAid.51de914c7f62d84f49f8.png",
+    "static/media/Ukrain.png": "/yellow-help-kh/static/media/Ukrain.2e55f2f3feebed66f972.png",
+    "static/media/UkrainEN.png": "/yellow-help-kh/static/media/UkrainEN.26fb4e16e48a2f265104.png",
+    "static/media/allTeams.jpg": "/yellow-help-kh/static/media/allTeams.b288840650509a4c5261.jpg",
+    "static/media/sprite.svg": "/yellow-help-kh/static/media/sprite.5499a2fc10f347def7a9c8d74e7a668d.svg",
+    "static/media/Minaev.jpg": "/yellow-help-kh/static/media/Minaev.0ddaec52c03459790f5a.jpg",
+    "static/media/Ignatiev.jpg": "/yellow-help-kh/static/media/Ignatiev.ef93242b6bac980ade1b.jpg",
+    "static/media/Kusayko.jpg": "/yellow-help-kh/static/media/Kusayko.49b474e69b1d06668cdb.jpg",
+    "static/media/Mukhoyan.jpg": "/yellow-help-kh/static/media/Mukhoyan.6e6580d49f66c61871bd.jpg",
+    "static/media/Siromolot.jpg": "/yellow-help-kh/static/media/Siromolot.52790cf9c5b15416a11c.jpg",
+    "static/media/Kobzev.jpg": "/yellow-help-kh/static/media/Kobzev.7e77fec810a98e1b0cba.jpg",
+    "index.html": "/yellow-help-kh/index.html",
+    "main.c5e101fb.css.map": "/yellow-help-kh/static/css/main.c5e101fb.css.map",
+    "main.719435cc.js.map": "/yellow-help-kh/static/js/main.719435cc.js.map",
+    "787.e11530e2.chunk.js.map": "/yellow-help-kh/static/js/787.e11530e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5e101fb.css",
+    "static/js/main.719435cc.js"
+  ]
+}
