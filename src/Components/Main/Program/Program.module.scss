@@ -1,0 +1,304 @@
+.section {
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 50px;
+  }
+}
+.program__title {
+  font-size: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+.container__description {
+  margin-top: 10px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.program__description {
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
+}
+.diagrama {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+.diagrama__help {
+  text-align: center;
+  color: var(--color-main-text);
+  background-color: var(--color-diagram-spent);
+  width: 120px;
+  height: 25px;
+  padding: 10px 10px;
+  font-size: 10px;
+  border-radius: 15px 0 0 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    height: 18px;
+
+    font-weight: 500;
+    padding: 10px 20px;
+    width: 250px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    padding: 15px 25px;
+    width: 350px;
+  }
+}
+.diagrama__need {
+  text-align: center;
+  border-radius: 0 15px 15px 0;
+  color: var(--color-main-background);
+  background-color: var(--color-diagram-need);
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 10px;
+  height: 25px;
+
+  @media screen and (min-width: 768px) {
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+
+.diagrama__description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 10px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+
+.help__now {
+  margin-left: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 350px;
+  }
+}
+
+.help__now::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+
+  background-color: var(--color-diagram-spent);
+  margin-left: -20px;
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin-left: -40px;
+  }
+}
+
+.help__need {
+  margin-left: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 350px;
+  }
+}
+
+.help__need::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: var(--color-diagram-need);
+  margin-left: -20px;
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin-left: -40px;
+  }
+}
+.cost__title {
+  margin-top: 20px;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+.cost__container {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+  }
+}
+.cost__list {
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cost__item {
+  margin-bottom: 15px;
+}
+
+.item__container {
+  width: 300px;
+  height: 65px;
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 90px;
+  }
+}
+
+.cost__all {
+  position: relative;
+  width: 300px;
+  height: 65px;
+  border-radius: 15px;
+  border: 1px solid var(--color-main-text);
+  padding: 10px;
+  background-color: var(--color-btn);
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 735px;
+    height: 80px;
+  }
+}
+
+.all__sum {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+
+  font-size: 32px;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    top: 30px;
+    right: 15px;
+    left: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    top: 50px;
+  }
+}
+
+.all__description {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    top: 20px;
+    right: 15px;
+    left: 15px;
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 20px;
+    width: 400px;
+    font-size: 28px;
+  }
+}
+
+.btn__assistance {
+  margin: 0 auto;
+  margin-top: 30px;
+
+  background-color: var(--color-btn);
+  padding: 20px 30px;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 15px;
+  &:hover,
+  :focus,
+  :active {
+    background-color: var(--color-hover-btn);
+  }
+}

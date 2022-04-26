@@ -1,0 +1,95 @@
+{
+  "navigation": {
+    "aboutUs": "ABOUT US",
+    "achievements": "ACHIEVEMEATS",
+    "team": "TEAM",
+    "program": "PROGRAM",
+    "contacts": "CONTACTS"
+  },
+  "section": {
+    "aboutUs": {
+      "title": "ABOUT US",
+      "description": "Our YELLOW HELP team works every day to help needy Kharkiv residents in this difficult time.",
+      "dispatcher": "people in the call center",
+      "stock": "warehouses in Kharkiv - 14 people",
+      "drivers": "drivers work in Kharkiv",
+      "car": "cars",
+      "bus": "large buses with 50 seats",
+      "miniBus": "minibuses with 16 seats"
+    },
+
+    "achievements": {
+      "title": "Our achievements in a month",
+      "description": "Our team YELLOW HELP works every day to help needy Kharkiv residents in this difficult time.",
+      "helpFamali": "evacuated families",
+      "humanitarianHelp": "applications for humanitarian aid were completed",
+      "organizedLunch": "meals sets were organized",
+      "titleHelp": "We helped more than 32,000 Kharkiv residents"
+    },
+
+    "team": {
+      "title": "Leaders",
+      "Siromolot": "Alexey Siromolot",
+      "SiromolotPosition": "organization of the call center",
+      "Minaev": "Mykola Minaev",
+      "MinaevPosition": "organization of targeted delivery of humanitarian aid and evacuation of people in Kharkiv",
+      "Mykhoyan": "Mukhoyan Artem",
+      "MykhoyanPosition": "responsible for logistics and freight in Ukraine",
+      "Kysiko": "Kusayko Alexander",
+      "KysikoPosition": "responsible for the technical condition of cars, organization of warehouses, coordination in Kharkiv",
+      "Kobzev": "Kobzev Denys",
+      "KobzevPosition": "responsible for contacts with donors, volunteers and the involvement of humanitarian aid. Entrepreneur.",
+      "Ignatiev": "Ignatiev Dmitry",
+      "IgnatievPosition": "responsible for management of the social networks and content.",
+      "more": "More"
+    },
+    "program": {
+      "title": "Our program `Save a life`",
+      "description": "Targeted delivery of quality nutrition sets to socially unprotected population, such as elderly and people with disabilities, mothers with children etc. in Kharkiv, Ukraine",
+      "descriptionHelp": "We are currently helping 3,670 people at our own expense by delivering them 4-5 humanitarian sets a month!",
+      "descriptionHelpNow": "Today our team has the opportunity to help 10,000 people in Kharkiv by delivering 50,000 product sets every month!",
+      "nowHelp": "3670 people / USD 350 000",
+      "nowHelpDescription": "Were helping by delivering 20,000 food sets in a month",
+      "needHelp": "10 000 people / USD 1 033 400",
+      "needHelpDescription": "To help by delivering 50,000 food sets every month, we are in need for funds",
+      "cost": {
+        "title": "The main costs for the implementation of the program per month",
+        "food": "USD 1 000 000",
+        "foodDescription": "product sets - 20 USD / set 50 000 sets per month",
+        "delivery": "USD 25 000",
+        "deliveryDescription": "transport costs - 0,5 USD / delivery 50 000 deliveries",
+        "application": "USD 1 400",
+        "applicationDescription": "processing of applications - 0,14 USD / applic 10 000 people",
+        "package": "USD 7 000",
+        "packageDescription": "formation of sets - 0,14 USD / set 50 000 sets",
+
+        "all": "USD 1 033 400",
+        "allDescription": "In total, the program requires:"
+      },
+      "assistance": "Financially support our program"
+    },
+
+    "contacts": {
+      "title": "Our Contacts",
+      "address": "vul. Kremenchutska 8, Poltava, Ukraine, 38751",
+      "nameOrganization": "CHARITABLE ORGANIZATION YELLOW AID CHARITABLE FOUNDATION",
+      "requisites": {
+        "title": "OUR DETAILS:",
+        "organizationField": "Найменування організації:",
+        "organization": "БО БФ ЖОВТА ДОПОМОГА",
+
+        "codeField": "Код отримувача:",
+        "code": "44688656",
+        "bankNameField": "Name of the bank:",
+        "bankName": "JSC CB PRIVATBANK",
+        "checkFieled": "IBAN Code:",
+        "checkUAN": "UA533052990000026009031211895",
+        "checkUSA": "UA613052990000026002021210416",
+        "checkEVRO": "UA503052990000026008031211692",
+
+        "swiftCodeField": "Bank SWIFT Code:",
+        "swiftCode": "PBANUA2X"
+      }
+    }
+  }
+}

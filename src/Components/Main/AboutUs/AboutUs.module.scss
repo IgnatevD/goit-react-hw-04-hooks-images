@@ -1,0 +1,61 @@
+.title {
+  font-size: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__item {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.about__teams {
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.item__container {
+  @media screen and (min-width: 768px) {
+    height: 85px;
+  }
+}

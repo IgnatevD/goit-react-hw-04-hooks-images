@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  width: 130px;
+  height: 65px;
+  border-radius: 15px;
+  border: 1px solid var(--color-main-text);
+  padding: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    height: 65px;
+    padding: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 160px;
+    height: 85px;
+  }
+}
+
+.number {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
+  font-size: 32px;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    top: 10px;
+    left: 15px;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  @media screen and (min-width: 768px) {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.description {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  right: 10px;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    top: 70px;
+    left: 15px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+  background-color: var(--color-footer-background);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+.contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
+.container__logo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-right: 100px;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.address {
+  margin-left: 20px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.container__network {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
+    flex-wrap: wrap;
+    width: 250px;
+  }
+}
+.telephone {
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.network__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  @media screen and (min-width: 1208px) {
+    flex-wrap: wrap;
+    width: 250px;
+  }
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+
+    font-size: 24px;
+  }
+}
+
+.requisites {
+  margin-top: 10px;
+}
+
+.container__contacts {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
+.container__requisites {
+  @media screen and (min-width: 1280px) {
+    margin-left: 60px;
+  }
+}

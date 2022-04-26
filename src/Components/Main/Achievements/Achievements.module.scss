@@ -1,0 +1,98 @@
+.section {
+  padding-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
+
+.title {
+  font-size: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.about__item {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.achievements__help {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.container__img {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 50px;
+  }
+}
+
+.peopleHelp {
+  margin-top: 20px;
+}
+
+.item__container {
+  box-sizing: border-box;
+  width: 320px;
+  height: 75px;
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    height: 105px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 350px;
+    height: 115px;
+  }
+}

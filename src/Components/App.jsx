@@ -1,25 +1,29 @@
-/** @format */
+import React from 'react';
+import { Context } from '../utils/context';
+import Footer from './Footer';
+import Header from './Header';
+import Main from './Main';
 
-import { useState } from "react";
-import PropTypes from "prop-types";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+const App = () => {
+  const aboutUs = React.createRef(null);
+  const achievements = React.createRef(null);
+  const teams = React.createRef(null);
+  const program = React.createRef(null);
+  const contacts = React.createRef(null);
 
-import ImageGallery from "./ImageGallery/ImageGallery";
-import Searchbar from "./Searchbar/Searchbar";
-
-export default function App() {
-  const [pixabayName, setPixabayName] = useState("");
+  const scrollSection = ref => {
+    ref.current.scrollIntoView();
+  };
 
   return (
-    <>
-      <Searchbar onGetSubmit={setPixabayName} />
-      <ImageGallery pixabayName={pixabayName} />
-      <ToastContainer />
-    </>
+    <Context.Provider value={{ aboutUs, achievements, teams, program, contacts, scrollSection }}>
+      <div>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </Context.Provider>
   );
-}
-
-App.propTypes = {
-  pixabayName: PropTypes.string,
 };
+
+export default App;

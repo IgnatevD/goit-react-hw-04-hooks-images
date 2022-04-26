@@ -1,0 +1,43 @@
+.menu {
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+
+.btn__home {
+  background-color: inherit;
+  border-radius: 15px 15px 0 0;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.menu__container {
+  background-color: var(--color-main-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+}
+
+.btn__close {
+  position: fixed;
+  background: none;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}

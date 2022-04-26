@@ -1,0 +1,51 @@
+.container {
+  font-size: 16px;
+}
+
+.container__item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+.title {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+.requisites__item {
+  margin-left: 10px;
+}
+.item {
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+span {
+  display: block;
+  font-weight: 600;
+}
+
+.item__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
