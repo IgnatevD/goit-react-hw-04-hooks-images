@@ -95,7 +95,7 @@
     height: 105px;
   }
   @media screen and (min-width: 1280px) {
-    width: 350px;
-    height: 115px;
+    min-width: 350px;
+    min-height: 115px;
   }
 }
