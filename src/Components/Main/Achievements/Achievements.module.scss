@@ -1,3 +1,5 @@
+/** @format */
+
 .section {
   padding-top: 30px;
 
@@ -87,6 +89,7 @@
   box-sizing: border-box;
   width: 320px;
   height: 75px;
+
   @media screen and (min-width: 768px) {
     width: 350px;
     height: 105px;
