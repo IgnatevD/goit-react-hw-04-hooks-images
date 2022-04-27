@@ -1,15 +1,27 @@
-import React from 'react';
-import Hero from './Hero';
+/** @format */
 
-import Team from './Team';
-import AboutUs from './AboutUs';
-import Program from './Program';
-import Achievements from './Achievements';
-import styles from './Main.module.scss';
+import React, { lazy } from "react"
+import Hero from "./Hero"
 
-// const LoginPage = lazy(() =>
-//   import('../../pages/LoginPage/LoginPage' /* webpackChunkName: "login-page" */),
-// );
+// import Team from './Team';
+// import AboutUs from './AboutUs';
+// import Program from './Program';
+// import Achievements from './Achievements';
+import styles from "./Main.module.scss"
+
+const AboutUs = lazy(() =>
+  import("./AboutUs" /* webpackChunkName: "AboutUs" */)
+)
+
+const Achievements = lazy(() =>
+  import("./Achievements" /* webpackChunkName: "Achievements" */)
+)
+
+const Program = lazy(() =>
+  import("./Program" /* webpackChunkName: "Program" */)
+)
+
+const Team = lazy(() => import("./Team" /* webpackChunkName: "Team" */))
 
 const Main = () => {
   return (
@@ -20,7 +32,7 @@ const Main = () => {
       <Program />
       <Team />
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
