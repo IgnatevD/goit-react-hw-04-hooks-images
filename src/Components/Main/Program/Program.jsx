@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Context } from '../../../utils/context';
 import Container from '../../Container';
 import { useTranslation } from 'react-i18next';
-import DieStatistics from '../DieStatistics/DieStatistics';
+import StatisticsPlate from '../StatisticsPlate';
 import Button from '../../Button';
 import styles from './Program.module.scss';
 
@@ -33,7 +33,7 @@ const Program = () => {
         <div className={styles.cost__container}>
           <ul className={styles.cost__list}>
             <li className={styles.cost__item}>
-              <DieStatistics
+              <StatisticsPlate
                 number={t('section.program.cost.food')}
                 icon=""
                 description={t('section.program.cost.foodDescription')}
@@ -41,7 +41,7 @@ const Program = () => {
               />
             </li>
             <li className={styles.cost__item}>
-              <DieStatistics
+              <StatisticsPlate
                 number={t('section.program.cost.delivery')}
                 icon=""
                 description={t('section.program.cost.deliveryDescription')}
@@ -49,7 +49,7 @@ const Program = () => {
               />
             </li>
             <li className={styles.cost__item}>
-              <DieStatistics
+              <StatisticsPlate
                 number={t('section.program.cost.application')}
                 icon=""
                 description={t('section.program.cost.applicationDescription')}
@@ -57,7 +57,7 @@ const Program = () => {
               />
             </li>
             <li className={styles.cost__item}>
-              <DieStatistics
+              <StatisticsPlate
                 number={t('section.program.cost.package')}
                 icon=""
                 description={t('section.program.cost.packageDescription')}

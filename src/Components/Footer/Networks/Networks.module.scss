@@ -29,9 +29,10 @@
 }
 
 .network__name {
-  overflow: hidden;
+  display: none;
   @media screen and (min-width: 1280px) {
-    overflow: 1;
+    display: block;
+
     font-size: 22px;
     color: var(--color-diagram-need);
   }

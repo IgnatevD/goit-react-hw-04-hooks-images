@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { Context } from '../../../utils/context';
 import Container from '../../Container';
-import DieStatistics from '../DieStatistics/DieStatistics';
+
 import humanitarianAid from '../../../image/pictures/humanitarianAid.png';
 import peopleHelp from '../../../image/pictures/peopleHelp.png';
 
+import StatisticsPlate from '../StatisticsPlate';
 import { useTranslation } from 'react-i18next';
 import styles from './Achievements.module.scss';
 
@@ -19,7 +20,7 @@ const Achievements = () => {
 
         <ul className={styles.about__list}>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="6 245"
               icon="icon-headphones"
               description={t('section.achievements.helpFamali')}
@@ -27,7 +28,7 @@ const Achievements = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="19 376"
               icon="icon-home"
               description={t('section.achievements.humanitarianHelp')}
@@ -35,7 +36,7 @@ const Achievements = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="> 72 000"
               icon="icon-user"
               description={t('section.achievements.organizedLunch')}

@@ -15,61 +15,36 @@ const Menu = ({ onToggleModal }) => {
 
   const { aboutUs, achievements, teams, program, contacts, scrollSection } = useContext(Context);
 
+  const getScrollTo = name => () => {
+    scrollSection(name);
+    closeModal();
+  };
+
   return (
     <div className={styles.menu__container}>
       <ul className={styles.list__menu}>
         <li className={styles.item__menu}>
-          <Button
-            onClick={() => {
-              scrollSection(aboutUs);
-              closeModal();
-            }}
-            className={styles.item__btn}
-          >
+          <Button onClick={getScrollTo(aboutUs)} className={styles.item__btn}>
             {t('navigation.aboutUs')}
           </Button>
         </li>
         <li className={styles.item__menu}>
-          <Button
-            onClick={() => {
-              scrollSection(achievements);
-              closeModal();
-            }}
-            className={styles.item__btn}
-          >
+          <Button onClick={getScrollTo(achievements)} className={styles.item__btn}>
             {t('navigation.achievements')}
           </Button>
         </li>
         <li className={styles.item__menu}>
-          <Button
-            onClick={() => {
-              scrollSection(program);
-              closeModal();
-            }}
-            className={styles.item__btn}
-          >
+          <Button onClick={getScrollTo(program)} className={styles.item__btn}>
             {t('navigation.program')}
           </Button>
         </li>
         <li className={styles.item__menu}>
-          <Button
-            onClick={() => {
-              scrollSection(teams);
-              closeModal();
-            }}
-            className={styles.item__btn}
-          >
+          <Button onClick={getScrollTo(teams)} className={styles.item__btn}>
             {t('navigation.team')}
           </Button>
         </li>
         <li className={styles.item__menu}>
-          <Button
-            onClick={() => {
-              scrollSection(contacts);
-              closeModal();
-            }}
-            className={styles.item__btn}
-          >
+          <Button onClick={getScrollTo(contacts)} className={styles.item__btn}>
             {t('navigation.contacts')}
           </Button>
         </li>

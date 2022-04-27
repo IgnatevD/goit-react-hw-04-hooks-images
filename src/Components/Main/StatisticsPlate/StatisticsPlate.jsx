@@ -1,8 +1,8 @@
 import React from 'react';
-import Svg from '../../Svg/Svg';
-import styles from './DieStatistics.module.scss';
+import Svg from '../../Svg';
+import styles from './StatisticsPlate.module.scss';
 
-const DieStatistics = ({ number, icon, description, className }) => {
+const StatisticsPlate = ({ number, icon, description, className }) => {
   return (
     <div className={`${styles.container} ${className}`}>
       <p className={styles.number}>{number}</p>
@@ -12,4 +12,4 @@ const DieStatistics = ({ number, icon, description, className }) => {
   );
 };
 
-export default DieStatistics;
+export default StatisticsPlate;

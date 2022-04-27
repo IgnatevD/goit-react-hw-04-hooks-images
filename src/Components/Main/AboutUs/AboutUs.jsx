@@ -3,7 +3,7 @@ import { Context } from '../../../utils/context';
 import Container from '../../Container';
 import allTeams from '../../../image/team/allTeams.jpg';
 import { useTranslation } from 'react-i18next';
-import DieStatistics from '../DieStatistics/DieStatistics';
+import StatisticsPlate from '../StatisticsPlate';
 import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
@@ -18,7 +18,7 @@ const AboutUs = () => {
 
         <ul className={styles.about__list}>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="26"
               icon="icon-headphones"
               description={t('section.aboutUs.dispatcher')}
@@ -26,7 +26,7 @@ const AboutUs = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="4"
               icon="icon-home"
               description={t('section.aboutUs.stock')}
@@ -34,7 +34,7 @@ const AboutUs = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="33"
               icon="icon-user"
               description={t('section.aboutUs.drivers')}
@@ -42,7 +42,7 @@ const AboutUs = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="27"
               icon="icon-car"
               description={t('section.aboutUs.car')}
@@ -50,7 +50,7 @@ const AboutUs = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="4"
               icon="icon-bus"
               description={t('section.aboutUs.miniBus')}
@@ -58,7 +58,7 @@ const AboutUs = () => {
             />
           </li>
           <li className={styles.about__item}>
-            <DieStatistics
+            <StatisticsPlate
               number="2"
               icon="icon-bus"
               description={t('section.aboutUs.bus')}
