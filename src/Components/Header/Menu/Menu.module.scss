@@ -1,3 +1,5 @@
+/** @format */
+
 .menu__container {
   display: flex;
   justify-content: flex-end;
@@ -29,7 +31,7 @@
     margin: 0px;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 700px;
+    min-width: 750px;
   }
 }
 
@@ -48,12 +50,11 @@
 }
 
 .item__btn {
+  box-sizing: content-box;
   margin: 0 auto;
   font-size: 24px;
   background: none;
-  padding: 3px;
   color: var(--color-diagram-need);
-  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -61,6 +62,11 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
+    &:hover,
+    :focus,
+    :active {
+      color: var(--color--hover-btn);
+    }
   }
 }
 .container__language {
@@ -75,6 +81,7 @@
   margin-top: 30px;
   font-size: 18px;
   padding: 5px 10px;
+  background: none;
   border: 1px solid var(--color-main-text);
   border-radius: 10px;
   @media screen and (min-width: 768px) {
@@ -85,5 +92,10 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
+    &:hover,
+    :focus {
+      color: var(--color-diagram-need);
+      border: 1px solid var(--color-diagram-need);
+    }
   }
 }
