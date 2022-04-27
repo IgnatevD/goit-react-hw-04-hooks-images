@@ -87,12 +87,12 @@
 
 .item__container {
   box-sizing: border-box;
-  width: 320px;
-  height: 75px;
+  min-width: 320px;
+  min-height: 75px;
 
   @media screen and (min-width: 768px) {
-    width: 350px;
-    height: 105px;
+    min-width: 350px;
+    min-height: 105px;
   }
   @media screen and (min-width: 1280px) {
     min-width: 350px;

@@ -1,7 +1,9 @@
-$font-family: 'Inter', sans-serif;
+/** @format */
+
+$font-family: "Inter", sans-serif;
 
 @mixin light-theme {
-  --color-main-background: #f7f1f1;
+  --color-main-background: #ffffff;
 
   --color-main-text: #1e1e1e;
   --color-search-title: #4c4545;
