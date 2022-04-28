@@ -44,7 +44,7 @@
       "more": "More"
     },
     "program": {
-      "title": "Our program `Save a life`",
+      "title": "Our program \"Save a life\"",
       "description": "Targeted delivery of quality nutrition sets to socially unprotected population, such as elderly and people with disabilities, mothers with children etc. in Kharkiv, Ukraine",
       "descriptionHelp": "We are currently helping 3,670 people at our own expense by delivering them 4-5 humanitarian sets a month!",
       "descriptionHelpNow": "Today our team has the opportunity to help 10,000 people in Kharkiv by delivering 50,000 product sets every month!",
@@ -72,13 +72,13 @@
     "contacts": {
       "title": "Our Contacts",
       "address": "vul. Kremenchutska 8, Poltava, Ukraine, 38751",
-      "nameOrganization": "CHARITABLE ORGANIZATION YELLOW AID CHARITABLE FOUNDATION",
+      "nameOrganization": "CHARITABLE ORGANIZATION YELLOW HELP CHARITABLE FOUNDATION",
       "requisites": {
         "title": "OUR DETAILS:",
-        "organizationField": "Найменування організації:",
-        "organization": "БО БФ ЖОВТА ДОПОМОГА",
+        "organizationField": "Name of organization:",
+        "organization": "CO CF YELLOW HELP",
 
-        "codeField": "Код отримувача:",
+        "codeField": "Recipient code:",
         "code": "44688656",
         "bankNameField": "Name of the bank:",
         "bankName": "JSC CB PRIVATBANK",

@@ -1,3 +1,5 @@
+/** @format */
+
 .section {
   padding-top: 20px;
 
@@ -135,7 +137,7 @@
 }
 
 .help__now::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -161,7 +163,7 @@
 }
 
 .help__need::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -281,8 +283,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 20px;
-    width: 400px;
+    top: 25px;
+    width: 300px;
     font-size: 28px;
   }
 }

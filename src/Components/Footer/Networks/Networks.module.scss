@@ -13,6 +13,13 @@
   align-items: center;
   @media screen and (min-width: 1280px) {
     align-items: center;
+
+    &:hover,
+    :focus {
+      .link__icon {
+        fill: var(--color-diagram-need);
+      }
+    }
   }
 }
 
@@ -28,6 +35,14 @@
 }
 .link__name {
   margin-left: 10px;
+  @media screen and (min-width: 1280px) {
+    .link__icon {
+      &:hover,
+      :focus {
+        fill: var(--color-diagram-need);
+      }
+    }
+  }
 }
 
 .network__name {
