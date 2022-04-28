@@ -7,12 +7,11 @@
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: 600px;
+    justify-content: space-between;
   }
-
-  @media screen and (min-width: 1280px) {
-    width: 700px;
+  @media screen and (min-width: 1280apx) {
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
 }
 
@@ -25,13 +24,13 @@
   justify-content: center;
   width: 250px;
   @media screen and (min-width: 768px) {
-    min-width: 550px;
+    width: 550px;
     flex-wrap: nowrap;
     align-items: flex-start;
     margin: 0px;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 750px;
+    width: 750px;
   }
 }
 
