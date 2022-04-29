@@ -1,7 +1,6 @@
 /** @format */
 
 .network__item {
-  margin-right: 10px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
   }
@@ -28,9 +27,13 @@
   height: 25px;
   fill: var(--color-main-text);
   @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 20px;
     width: 40px;
     height: 40px;
-    margin-right: 20px;
   }
 }
 .link__name {

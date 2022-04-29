@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
             </div>
             <div className={styles.container__requisites}>
-              <h3 className={styles.name}>
+              <h3 className={styles.name__organization}>
                 {t("section.contacts.nameOrganization")}
               </h3>
               <Requisites className={styles.requisites} />
