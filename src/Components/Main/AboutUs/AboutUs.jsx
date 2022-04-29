@@ -1,14 +1,21 @@
 /** @format */
 
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import { Context } from "../../../utils/context"
 import Container from "../../Container"
-import allTeams from "../../../image/team/allTeams.jpg"
+import allTeams from "../../../image/aboutUs/allTeams.jpg"
+import car from "../../../image/aboutUs/car.jpg"
+import driver from "../../../image/aboutUs/driver.jpg"
+import operator from "../../../image/aboutUs/operator.jpg"
+import stock from "../../../image/aboutUs/stock.jpg"
+
 import { useTranslation } from "react-i18next"
 import StatisticsPlate from "../StatisticsPlate"
 import styles from "./AboutUs.module.scss"
 
 const AboutUs = () => {
+  const [img, setImg] = useState(allTeams)
+
   const { t } = useTranslation()
   const { aboutUs } = useContext(Context)
 
@@ -19,7 +26,10 @@ const AboutUs = () => {
         <p className={styles.description}>{t("section.aboutUs.description")}</p>
 
         <ul className={styles.about__list}>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(operator)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='26'
               icon='icon-operator'
@@ -27,7 +37,10 @@ const AboutUs = () => {
               className={styles.item__container}
             />
           </li>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(stock)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='4'
               icon='icon-home'
@@ -35,7 +48,10 @@ const AboutUs = () => {
               className={styles.item__container}
             />
           </li>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(driver)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='33'
               icon='icon-driver'
@@ -43,7 +59,10 @@ const AboutUs = () => {
               className={styles.item__container}
             />
           </li>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(car)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='27'
               icon='icon-car'
@@ -51,7 +70,10 @@ const AboutUs = () => {
               className={styles.item__container}
             />
           </li>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(stock)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='4'
               icon='icon-bus-driver'
@@ -59,7 +81,10 @@ const AboutUs = () => {
               className={styles.item__container}
             />
           </li>
-          <li className={styles.about__item}>
+          <li
+            className={styles.about__item}
+            onMouseEnter={() => setImg(stock)}
+            onMouseLeave={() => setImg(allTeams)}>
             <StatisticsPlate
               number='2'
               icon='icon-bus'
@@ -70,9 +95,9 @@ const AboutUs = () => {
         </ul>
         <div className={styles.tumb__img}>
           <img
-            src={allTeams}
+            src={img}
             alt='Команда Жовтой допоги'
-            className={styles.about__teams}
+            className={styles.about__img}
           />
         </div>
       </Container>
