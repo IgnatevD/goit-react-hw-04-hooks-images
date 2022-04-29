@@ -35,18 +35,20 @@
 
 .about__item {
   margin-top: 10px;
+  cursor: pointer;
+  &:hover,
+  :focus,
+  :active {
+    border-radius: 15px;
+    background-color: var(--color-btn);
+    color: var(--color-diagram-need);
+  }
   @media screen and (min-width: 768px) {
     margin-top: 15px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
-    cursor: pointer;
-    &:hover {
-      border-radius: 15px;
-      background-color: var(--color-btn);
-      color: var(--color-diagram-need);
-    }
   }
 }
 
