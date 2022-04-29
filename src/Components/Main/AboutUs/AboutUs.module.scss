@@ -39,6 +39,7 @@
   &:hover,
   :focus,
   :active {
+    border-radius: 15px;
     background-color: var(--color-btn);
     color: var(--color-diagram-need);
   }
