@@ -1,4 +1,6 @@
-@import '../../../../styles/variaibles.scss';
+/** @format */
+
+@import "../../../../styles/variaibles.scss";
 
 .item {
   margin-bottom: 30px;
@@ -36,7 +38,7 @@
   text-align: center;
 }
 
-.btn_more {
+.btn__more {
   margin: 0 auto;
   font-size: 14px;
   margin-top: 10px;
@@ -46,6 +48,7 @@
   &:hover,
   :active,
   :focus {
+    color: var(--color-main-background);
     background-color: var(--color-hover-btn);
   }
 }

@@ -1,11 +1,13 @@
-import React from 'react';
-import Button from '../../../Button';
-import { useTranslation } from 'react-i18next';
+/** @format */
 
-import styles from './Card.module.scss';
+import React from "react"
+import Button from "../../../Button"
+import { useTranslation } from "react-i18next"
+
+import styles from "./Card.module.scss"
 
 const Card = ({ photo, name, position }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <li className={styles.item}>
       <div className={styles.container_img}>
@@ -13,9 +15,9 @@ const Card = ({ photo, name, position }) => {
       </div>
       <h3 className={styles.name}>{name}</h3>
       <p className={styles.position}> {position}</p>
-      <Button className={styles.btn_more}> {t('section.team.more')}</Button>
+      <Button className={styles.btn__more}> {t("section.team.more")}</Button>
     </li>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

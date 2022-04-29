@@ -250,7 +250,6 @@
   position: absolute;
   top: 40px;
   left: 10px;
-
   font-size: 32px;
   font-weight: 600;
 
@@ -301,6 +300,7 @@
   &:hover,
   :focus,
   :active {
+    color: var(--color-main-background);
     background-color: var(--color-hover-btn);
   }
 }
