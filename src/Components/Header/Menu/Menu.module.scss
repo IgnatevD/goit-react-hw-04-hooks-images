@@ -9,7 +9,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1280apx) {
+  @media screen and (min-width: 1280px) {
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -22,11 +22,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 260px;
   @media screen and (min-width: 768px) {
     width: 550px;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    justify-content: flex-end;
     margin: 0px;
   }
   @media screen and (min-width: 1280px) {
@@ -84,15 +84,18 @@
   border: 1px solid var(--color-main-text);
   border-radius: 10px;
   @media screen and (min-width: 768px) {
+    width: 40px;
     font-size: 14px;
     padding: 3px 8px;
     margin-top: 0px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 50px;
     font-size: 14px;
     &:hover,
     :focus {
+      background-color: var(--color-footer-background);
       color: var(--color-diagram-need);
       border: 1px solid var(--color-diagram-need);
     }
