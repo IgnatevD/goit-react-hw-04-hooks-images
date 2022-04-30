@@ -12,7 +12,6 @@
   align-items: center;
   @media screen and (min-width: 1280px) {
     align-items: center;
-
     &:hover,
     :focus {
       .link__icon {
@@ -34,6 +33,7 @@
     margin-right: 20px;
     width: 40px;
     height: 40px;
+    transition: 300ms linear;
   }
 }
 .link__name {

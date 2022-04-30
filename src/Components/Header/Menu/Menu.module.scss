@@ -64,6 +64,7 @@
     &:hover,
     :focus,
     :active {
+      transform: scale(1.1);
       color: var(--color--hover-btn);
     }
   }
@@ -95,6 +96,7 @@
     font-size: 14px;
     &:hover,
     :focus {
+      transform: scale(1.1);
       background-color: var(--color-footer-background);
       color: var(--color-diagram-need);
       border: 1px solid var(--color-diagram-need);

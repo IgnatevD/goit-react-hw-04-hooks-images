@@ -1,0 +1,14 @@
+/** @format */
+.link {
+  @media screen and (min-width: 1280px) {
+    &:hover {
+      & .container__img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.container__img {
+  transition: 300ms linear;
+}

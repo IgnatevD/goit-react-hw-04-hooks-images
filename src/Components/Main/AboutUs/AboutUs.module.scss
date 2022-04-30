@@ -36,9 +36,11 @@
 .about__item {
   margin-top: 10px;
   cursor: pointer;
+  transition: 300ms linear;
   &:hover,
   :focus,
   :active {
+    transform: scale(1.05);
     border-radius: 15px;
     background-color: var(--color-btn);
     color: var(--color-diagram-need);
@@ -73,4 +75,20 @@
   @media screen and (min-width: 768px) {
     height: 85px;
   }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.isActive {
+  animation-name: opacity;
+  animation-duration: 900ms;
+  animation-timing-function: ease;
 }

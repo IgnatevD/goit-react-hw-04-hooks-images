@@ -1,0 +1,51 @@
+/** @format */
+.section {
+  padding-bottom: 30px;
+}
+
+.title {
+  font-size: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+.ourPartners__list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.about__item {
+  width: 250px;
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+    width: 350px;
+  }
+}

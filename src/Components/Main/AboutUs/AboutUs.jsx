@@ -14,7 +14,7 @@ import StatisticsPlate from "../StatisticsPlate"
 import styles from "./AboutUs.module.scss"
 
 const AboutUs = () => {
-  const [img, setImg] = useState(allTeams)
+  const [img, setImg] = useState({ img: allTeams, class: " " })
 
   const { t } = useTranslation()
   const { aboutUs } = useContext(Context)
@@ -28,8 +28,10 @@ const AboutUs = () => {
         <ul className={styles.about__list}>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(operator)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() =>
+              setImg({ img: operator, class: styles.isActive })
+            }
+            onMouseLeave={() => setImg({ img: operator, class: " " })}>
             <StatisticsPlate
               number='26'
               icon='icon-operator'
@@ -39,8 +41,8 @@ const AboutUs = () => {
           </li>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(stock)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() => setImg({ img: stock, class: styles.isActive })}
+            onMouseLeave={() => setImg({ img: stock, class: " " })}>
             <StatisticsPlate
               number='4'
               icon='icon-home'
@@ -50,8 +52,8 @@ const AboutUs = () => {
           </li>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(driver)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() => setImg({ img: driver, class: styles.isActive })}
+            onMouseLeave={() => setImg({ img: driver, class: " " })}>
             <StatisticsPlate
               number='33'
               icon='icon-driver'
@@ -61,8 +63,8 @@ const AboutUs = () => {
           </li>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(car)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() => setImg({ img: car, class: styles.isActive })}
+            onMouseLeave={() => setImg({ img: car, class: " " })}>
             <StatisticsPlate
               number='27'
               icon='icon-car'
@@ -72,8 +74,8 @@ const AboutUs = () => {
           </li>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(stock)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() => setImg({ img: stock, class: styles.isActive })}
+            onMouseLeave={() => setImg({ img: stock, class: " " })}>
             <StatisticsPlate
               number='4'
               icon='icon-bus-driver'
@@ -83,8 +85,8 @@ const AboutUs = () => {
           </li>
           <li
             className={styles.about__item}
-            onMouseEnter={() => setImg(stock)}
-            onMouseLeave={() => setImg(allTeams)}>
+            onMouseEnter={() => setImg({ img: stock, class: styles.isActive })}
+            onMouseLeave={() => setImg({ img: stock, class: " " })}>
             <StatisticsPlate
               number='2'
               icon='icon-bus'
@@ -93,11 +95,15 @@ const AboutUs = () => {
             />
           </li>
         </ul>
-        <div className={styles.tumb__img}>
+        <div
+          className={styles.tumb__img}
+          onMouseEnter={() =>
+            setImg({ img: allTeams, class: styles.isActive })
+          }>
           <img
-            src={img}
+            src={img.img}
             alt='Команда Жовтой допоги'
-            className={styles.about__img}
+            className={img.class}
           />
         </div>
       </Container>

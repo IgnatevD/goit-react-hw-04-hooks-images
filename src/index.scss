@@ -1,4 +1,6 @@
-@import './styles/variaibles.scss';
+/** @format */
+
+@import "./styles/variaibles.scss";
 
 body {
   font-family: $font-family;
@@ -41,8 +43,11 @@ button {
   &:hover,
   :focus,
   :active {
-    transition: 300ms;
+    transition: 300ms linear;
   }
+}
+a {
+  cursor: pointer;
 }
 
 li {

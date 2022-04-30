@@ -2,12 +2,8 @@
 
 import React, { lazy } from "react"
 import Hero from "./Hero"
-
-// import Team from './Team';
-// import AboutUs from './AboutUs';
-// import Program from './Program';
-// import Achievements from './Achievements';
 import styles from "./Main.module.scss"
+import OurPartners from "./OurPartners"
 
 const AboutUs = lazy(() =>
   import("./AboutUs" /* webpackChunkName: "AboutUs" */)
@@ -31,6 +27,7 @@ const Main = () => {
       <Achievements />
       <Program />
       <Team />
+      <OurPartners />
     </main>
   )
 }
