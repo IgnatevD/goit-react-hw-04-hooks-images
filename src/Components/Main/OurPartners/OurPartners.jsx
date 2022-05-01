@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next"
 import Partner from "./Partner"
 import nu_logo from "../../../image/partner/nu_logo.png"
 import razom_logo from "../../../image/partner/razom_logo.png"
+import roma_logo from "../../../image/partner/roma_logo.png"
+
 
 import styles from "./OurPartners.module.scss"
 
@@ -20,6 +22,10 @@ const OurPartners = () => {
     {
       logo: razom_logo,
       link: "https://razomforukraine.org/projects/",
+    },
+    {
+      logo: roma_logo,
+      link: "https://romakpf.com",
     },
   ]
 
