@@ -19,15 +19,6 @@
 }
 .img {
   width: 100%;
-  border-radius: 15px;
-
-  @media screen and (min-width: 768px) {
-    width: 330px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 330px;
-  }
 }
 
 .name {
@@ -56,4 +47,9 @@
 }
 .container__img {
   border-radius: 15px;
+  width: 320px;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
 }
