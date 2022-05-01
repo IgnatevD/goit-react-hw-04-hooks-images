@@ -29,20 +29,109 @@
 
     "team": {
       "title": "Leaders",
-      "Siromolot": "Alexey Siromolot",
-      "SiromolotPosition": "organization of the call center",
-      "Minaev": "Mykola Minaev",
-      "MinaevPosition": "organization of targeted delivery of humanitarian aid and evacuation of people in Kharkiv",
-      "Mykhoyan": "Mukhoyan Artem",
-      "MykhoyanPosition": "responsible for logistics and freight in Ukraine",
-      "Kysiko": "Kusayko Alexander",
-      "KysikoPosition": "responsible for the technical condition of cars, organization of warehouses, coordination in Kharkiv",
-      "Kobzev": "Kobzev Denys",
-      "KobzevPosition": "responsible for contacts with donors, volunteers and the involvement of humanitarian aid. Entrepreneur.",
-      "Ignatiev": "Ignatiev Dmitry",
-      "IgnatievPosition": "responsible for management of the social networks and content.",
-      "Shapoval": "Marina Shapoval",
-      "ShapovalPosition": "security and communications specialist.",
+      "Siromolot": {
+        "name": "Alexey Siromolot",
+        "position": "organization of the call center",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "Quest": {
+              "name": "IQuest Quest Rooms  (7 years)",
+              "link": "http://iquest.com.ua"
+            },
+            "Call": {
+              "name": "Call center  (9 years)",
+              "link": "http://icallcentre.com.ua"
+            },
+            "Sukhari": {
+              "name": "Sukhara Learning Portal (3 years)",
+              "link": "http://sukhari.com.ua"
+            },
+            "Iconsulting": {
+              "name": "Consulting in sales and business automation fields, establishment  of the CRM",
+              "link": "http://iconsulting.com.ua"
+            }
+          }
+        }
+      },
+
+      "Minaev": {
+        "name": "Mykola Minaev",
+        "position": "organization of targeted delivery of humanitarian aid and evacuation of people in Kharkiv",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "Taxi": {
+              "name": "Founder of the Yellow Taxi  service  (9 ears). Personal taxi fleet with 54 cars and 120 drivers",
+              "link": "https://yellow-taxi.com.ua"
+            }
+          }
+        }
+      },
+
+      "Mykhoyan": {
+        "name": "Mukhoyan Artem",
+        "position": "responsible for logistics and freight in Ukraine",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "TransStar": {
+              "name": "Founder of Trans Star (11 years of experience in the logistics field)",
+              "link": "https://yellow-taxi.com.ua"
+            }
+          }
+        }
+      },
+
+      "Kysiko": {
+        "name": "Kusayko Alexander",
+        "position": "responsible for the technical condition of cars, organization of warehouses, coordination in Kharkiv",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "Bilding": {
+              "name": "Head of a construction company",
+              "link": "https://yellow-taxi.com.ua"
+            }
+          }
+        }
+      },
+
+      "Kobzev": {
+        "name": "Kobzev Denys",
+        "position": "responsible for contacts with donors, volunteers and the involvement of humanitarian aid. Entrepreneur. ",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "Svtr": {
+              "name": "Owner of the knitting company SVTR",
+              "link": "https://svtr.com.ua"
+            }
+          }
+        }
+      },
+
+      "Ignatiev": {
+        "name": "Ignatiev Dmitry",
+        "position": "responsible for management of the social networks and content.",
+        "profession": {
+          "title": "Businessman",
+          "work": {
+            "Khai": {
+              "name": "CEO of the Public Relations Center  of the National Aerospace University \"Kharkiv Aviation Institute\"",
+              "link": "https://khai.edu/ua/"
+            }
+          }
+        }
+      },
+
+      "Shapoval": {
+        "name": "Marina Shapoval",
+        "position": "security and communications specialist",
+        "profession": {
+          "title": "Businesswoman"
+        }
+      },
       "more": "More"
     },
     "program": {

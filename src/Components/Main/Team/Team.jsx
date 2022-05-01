@@ -22,52 +22,129 @@ const Team = () => {
   const allTeam = [
     {
       photo: Siromolot,
-      name: t("section.team.Siromolot"),
-      position: t("section.team.SiromolotPosition"),
+      name: t("section.team.Siromolot.name"),
+      position: t("section.team.Siromolot.position"),
+      profession: {
+        title: t("section.team.Siromolot.profession.title"),
+        work: [
+          {
+            name: t("section.team.Siromolot.profession.work.Quest.name"),
+            link: t("section.team.Siromolot.profession.work.Quest.link"),
+          },
+          {
+            name: t("section.team.Siromolot.profession.work.Call.name"),
+            link: t("section.team.Siromolot.profession.work.Call.link"),
+          },
+          {
+            name: t("section.team.Siromolot.profession.work.Sukhari.name"),
+            link: t("section.team.Siromolot.profession.work.Sukhari.link"),
+          },
+          {
+            name: t("section.team.Siromolot.profession.work.Iconsulting.name"),
+            link: t("section.team.Siromolot.profession.work.Iconsulting.link"),
+          },
+        ],
+      },
     },
     {
       photo: Minaev,
-      name: t("section.team.Minaev"),
-      position: t("section.team.MinaevPosition"),
+      name: t("section.team.Minaev.name"),
+      position: t("section.team.Minaev.position"),
+      profession: {
+        title: t("section.team.Minaev.profession.title"),
+        work: [
+          {
+            name: t("section.team.Minaev.profession.work.Taxi.name"),
+            link: t("section.team.Minaev.profession.work.Taxi.link"),
+          },
+        ],
+      },
     },
+
     {
       photo: Mukhoyan,
-      name: t("section.team.Mykhoyan"),
-      position: t("section.team.MykhoyanPosition"),
+      name: t("section.team.Mykhoyan.name"),
+      position: t("section.team.Mykhoyan.position"),
+      profession: {
+        title: t("section.team.Mykhoyan.profession.title"),
+        work: [
+          {
+            name: t("section.team.Mykhoyan.profession.work.TransStar.name"),
+            link: t("section.team.Mykhoyan.profession.work.TransStar.link"),
+          },
+        ],
+      },
     },
     {
       photo: Kusayko,
-      name: t("section.team.Kysiko"),
-      position: t("section.team.KysikoPosition"),
+      name: t("section.team.Kysiko.name"),
+      position: t("section.team.Kysiko.position"),
+      profession: {
+        title: t("section.team.Kysiko.profession.title"),
+        work: [
+          {
+            name: t("section.team.Kysiko.profession.work.Bilding.name"),
+            link: t("section.team.Kysiko.profession.work.Bilding.link"),
+          },
+        ],
+      },
     },
     {
       photo: Kobzev,
-      name: t("section.team.Kobzev"),
-      position: t("section.team.KobzevPosition"),
+      name: t("section.team.Kobzev.name"),
+      position: t("section.team.Kobzev.position"),
+      profession: {
+        title: t("section.team.Kobzev.profession.title"),
+        work: [
+          {
+            name: t("section.team.Kobzev.profession.work.Svtr.name"),
+            link: t("section.team.Kobzev.profession.work.Svtr.link"),
+          },
+        ],
+      },
     },
     {
       photo: Shapoval,
-      name: t("section.team.Shapoval"),
-      position: t("section.team.ShapovalPosition"),
+      name: t("section.team.Shapoval.name"),
+      position: t("section.team.Shapoval.position"),
+      profession: {
+        title: t("section.team.Shapoval.profession.title"),
+        work: [],
+      },
     },
     {
       photo: Ignatiev,
-      name: t("section.team.Ignatiev"),
-      position: t("section.team.IgnatievPosition"),
+      name: t("section.team.Ignatiev.name"),
+      position: t("section.team.Ignatiev.position"),
+      profession: {
+        title: t("section.team.Ignatiev.profession.title"),
+        work: [
+          {
+            name: t("section.team.Ignatiev.profession.work.Khai.name"),
+            link: t("section.team.Ignatiev.profession.work.Khai.link"),
+          },
+        ],
+      },
     },
   ]
 
   return (
-    <footer className={styles.footer} ref={teams}>
+    <div className={styles.footer} ref={teams}>
       <Container>
         <h2 className={styles.title}>{t("section.team.title")}</h2>
         <ul className={styles.team__list}>
-          {allTeam.map(({ photo, name, position }, index) => (
-            <Card photo={photo} name={name} position={position} key={index} />
+          {allTeam.map(({ photo, name, position, profession }, index) => (
+            <Card
+              photo={photo}
+              name={name}
+              position={position}
+              profession={profession}
+              key={index}
+            />
           ))}
         </ul>
       </Container>
-    </footer>
+    </div>
   )
 }
 
