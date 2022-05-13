@@ -106,6 +106,14 @@ const AboutUs = () => {
             className={img.class}
           />
         </div>
+        <div className={styles.tumb__video}>
+          <iframe
+            className={styles.video}
+            src='https://www.youtube.com/embed/ugMz1uxshV8'
+            title='Yellow Help'
+            frameBorder='0'
+            allowFullScreen></iframe>
+        </div>
       </Container>
     </section>
   )
