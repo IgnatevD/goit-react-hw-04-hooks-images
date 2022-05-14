@@ -288,8 +288,11 @@
 }
 
 .btn__assistance {
+  display: block;
+  text-decoration: none;
   margin: 0 auto;
   margin-top: 30px;
+  text-align: center;
   border: 1px solid var(--color-main-text);
   background-color: var(--color-btn);
   padding: 20px 30px;

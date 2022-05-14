@@ -5,16 +5,12 @@ import { Context } from "../../../utils/context"
 import Container from "../../Container"
 import { useTranslation } from "react-i18next"
 import StatisticsPlate from "../StatisticsPlate"
-import Button from "../../Button"
 import styles from "./Program.module.scss"
 
 const Program = () => {
-  const { program, contacts, scrollSection } = useContext(Context)
+  const { program } = useContext(Context)
   const { t } = useTranslation()
-
-  const getScrollTo = (name) => () => {
-    scrollSection(name)
-  }
+  const blank = "_blank"
 
   return (
     <section className={styles.section} ref={program}>
@@ -94,11 +90,12 @@ const Program = () => {
             <p className={styles.all__sum}>{t("section.program.cost.all")}</p>
           </div>
         </div>
-        <Button
+        <a
           className={styles.btn__assistance}
-          onClick={getScrollTo(contacts)}>
+          href='https://pay.fondy.eu/s/20IT2GkMRb6ZHu7f'
+          target={blank}>
           {t("section.program.assistance")}
-        </Button>
+        </a>
       </Container>
     </section>
   )
