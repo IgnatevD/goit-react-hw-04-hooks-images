@@ -15,7 +15,6 @@ import styles from "./AboutUs.module.scss"
 
 const AboutUs = () => {
   const [img, setImg] = useState({ img: allTeams, class: " " })
-
   const { t } = useTranslation()
   const { aboutUs } = useContext(Context)
 
