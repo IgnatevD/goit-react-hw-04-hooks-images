@@ -1,33 +1,20 @@
 /** @format */
 
-import React, { lazy } from "react"
-import Hero from "./Hero"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import Home from "../Page/Home"
+import OtherFunds from "../Page/OtherFunds"
+
 import styles from "./Main.module.scss"
-import OurPartners from "./OurPartners"
-
-const AboutUs = lazy(() =>
-  import("./AboutUs" /* webpackChunkName: "AboutUs" */)
-)
-
-const Achievements = lazy(() =>
-  import("./Achievements" /* webpackChunkName: "Achievements" */)
-)
-
-const Program = lazy(() =>
-  import("./Program" /* webpackChunkName: "Program" */)
-)
-
-const Team = lazy(() => import("./Team" /* webpackChunkName: "Team" */))
 
 const Main = () => {
   return (
     <main className={styles.main}>
-      <Hero />
-      <AboutUs />
-      <Achievements />
-      <Program />
-      <Team />
-      <OurPartners />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/other' element={<OtherFunds />} />
+        <Route path='*' element={<h2> Not found page</h2>} />
+      </Routes>
     </main>
   )
 }
