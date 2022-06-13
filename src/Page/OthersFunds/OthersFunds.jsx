@@ -179,6 +179,7 @@ const humanitarianFunds = [
 ]
 
 const OthersFunds = () => {
+  const blank = "_blank"
   return (
     <section className={styles.section}>
       <Container>
@@ -193,7 +194,7 @@ const OthersFunds = () => {
                       <h3>{name}</h3>
                       {description && <p> {description}</p>}
                       {link && (
-                        <a href={link} className={styles.link}>
+                        <a href={link} className={styles.link} target={blank}>
                           Реєстрація
                         </a>
                       )}
