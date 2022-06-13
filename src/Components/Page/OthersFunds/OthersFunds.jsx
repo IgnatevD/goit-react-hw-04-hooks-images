@@ -2,7 +2,7 @@
 
 import React from "react"
 import Container from "../../Container"
-import styles from "./OtherFunds.module.scss"
+import styles from "./OthersFunds.module.scss"
 
 const financialFunds = [
   {
@@ -178,7 +178,7 @@ const humanitarianFunds = [
   },
 ]
 
-const OtherFunds = () => {
+const OthersFunds = () => {
   return (
     <section className={styles.section}>
       <Container className={styles.container}>
@@ -230,4 +230,4 @@ const OtherFunds = () => {
   )
 }
 
-export default OtherFunds
+export default OthersFunds

@@ -96,6 +96,12 @@ const Program = () => {
           target={blank}>
           {t("section.program.assistance")}
         </a>
+        <a
+          className={styles.btn__assistance}
+          href='https://yellow-help.netlify.app/others'
+          target={blank}>
+          Отримати допомогу від іншіх фондів
+        </a>
       </Container>
     </section>
   )
