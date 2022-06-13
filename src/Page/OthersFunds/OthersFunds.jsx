@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react"
-import Container from "../../Container"
+import Container from "../../Components/Container"
 import styles from "./OthersFunds.module.scss"
 
 const financialFunds = [
@@ -181,49 +181,56 @@ const humanitarianFunds = [
 const OthersFunds = () => {
   return (
     <section className={styles.section}>
-      <Container className={styles.container}>
-        <div>
-          <h2 className={styles.title}>ГРОШОВІ ФОНДИ:</h2>
-          <ul className={styles.funds}>
-            {financialFunds.map(
-              ({ img, name, description, link, status, number }, index) => {
-                return (
-                  <li key={index} className={styles.fund}>
-                    <h3>{name}</h3>
-                    {description && <p> {description}</p>}
-                    {link && (
-                      <a href={link} className={styles.link}>
-                        Реєстрація
-                      </a>
-                    )}
+      <Container>
+        <div className={styles.container}>
+          <div>
+            <h2 className={styles.title}>ГРОШОВІ ФОНДИ:</h2>
+            <ul className={styles.funds}>
+              {financialFunds.map(
+                ({ img, name, description, link, status, number }, index) => {
+                  return (
+                    <li key={index} className={styles.fund}>
+                      <h3>{name}</h3>
+                      {description && <p> {description}</p>}
+                      {link && (
+                        <a href={link} className={styles.link}>
+                          Реєстрація
+                        </a>
+                      )}
 
-                    {status && <p> {status}</p>}
-                    {number && <p> {number}</p>}
-                  </li>
-                )
-              }
-            )}
-          </ul>
+                      {status && <p> {status}</p>}
+                      {number && <p> {number}</p>}
+                    </li>
+                  )
+                }
+              )}
+            </ul>
+          </div>
+          <div className={styles.funds__container}>
+            <h2>ГУМАНІТАРНІ ФОНДИ:</h2>
+            <ul className={styles.funds}>
+              {humanitarianFunds.map(
+                ({ img, name, description, link }, index) => {
+                  return (
+                    <li key={index} className={styles.fund}>
+                      <h3>{name}</h3>
+                      {description && <p> {description}</p>}
+                      {link && (
+                        <a href={link} className={styles.link}>
+                          Реєстрація
+                        </a>
+                      )}
+                    </li>
+                  )
+                }
+              )}
+            </ul>
+          </div>
         </div>
-        <div className={styles.funds__container}>
-          <h2>ГУМАНІТАРНІ ФОНДИ:</h2>
-          <ul className={styles.funds}>
-            {humanitarianFunds.map(
-              ({ img, name, description, link }, index) => {
-                return (
-                  <li key={index} className={styles.fund}>
-                    <h3>{name}</h3>
-                    {description && <p> {description}</p>}
-                    {link && (
-                      <a href={link} className={styles.link}>
-                        Реєстрація
-                      </a>
-                    )}
-                  </li>
-                )
-              }
-            )}
-          </ul>
+        <div className={styles.discriotion}>
+          <p>Уважно читайте вимоги для подачі заяви у кожному фонді!</p>
+          <p>На сайтах є перелік категорій людей, яким допомагає фонд.</p>
+          <p> Давайте допомагати один одному!</p>
         </div>
       </Container>
     </section>

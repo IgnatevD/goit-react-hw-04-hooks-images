@@ -5,12 +5,14 @@ import { Context } from "../../../utils/context"
 import Container from "../../Container"
 import { useTranslation } from "react-i18next"
 import StatisticsPlate from "../StatisticsPlate"
+import { Link } from "react-router-dom"
 import styles from "./Program.module.scss"
 
 const Program = () => {
   const { program } = useContext(Context)
   const { t } = useTranslation()
   const blank = "_blank"
+  const self = "_self"
 
   return (
     <section className={styles.section} ref={program}>
@@ -96,12 +98,9 @@ const Program = () => {
           target={blank}>
           {t("section.program.assistance")}
         </a>
-        <a
-          className={styles.btn__assistance}
-          href='https://yellow-help.netlify.app/others'
-          target={blank}>
-          Отримати допомогу від іншіх фондів
-        </a>
+        <Link className={styles.btn__assistance} to='/others' target={self}>
+          Отримати допомогу від інших фондів
+        </Link>
       </Container>
     </section>
   )

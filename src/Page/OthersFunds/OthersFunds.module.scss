@@ -33,3 +33,11 @@
     margin-left: 120px;
   }
 }
+
+.discriotion {
+  @media screen and (min-width: 1280px) {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
