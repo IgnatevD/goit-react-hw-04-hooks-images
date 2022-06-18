@@ -8,6 +8,7 @@ import Menu from "./Menu"
 import { useTranslation } from "react-i18next"
 import styles from "./Header.module.scss"
 import { NavLink } from "react-router-dom"
+import Donate from "../Donate"
 
 const Header = () => {
   const { i18n } = useTranslation()
@@ -38,7 +39,7 @@ const Header = () => {
               className={styles.logo}
             />
           </NavLink>
-
+          <Donate className={styles.donate} />
           <div className={styles.menu}>
             {width < breakPoint ? <BurgerMenu /> : <Menu />}
           </div>

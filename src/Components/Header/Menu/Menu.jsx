@@ -7,7 +7,7 @@ import { NavLink, useLocation } from "react-router-dom"
 import styles from "./Menu.module.scss"
 import Donate from "../../Donate"
 
-const Menu = ({ onToggleModal }) => {
+const Menu = ({ onToggleModal = false }) => {
   const { t, i18n } = useTranslation()
   const { pathname } = useLocation()
 
@@ -83,7 +83,7 @@ const Menu = ({ onToggleModal }) => {
       </ul>
 
       <div className={styles.container__language}>
-        <Donate />
+        {onToggleModal && <Donate className={styles.donate} />}
 
         {i18n.language === "ua" ? (
           <Button
