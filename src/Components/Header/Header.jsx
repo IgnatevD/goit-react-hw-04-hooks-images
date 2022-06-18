@@ -13,7 +13,7 @@ const Header = () => {
   const { i18n } = useTranslation()
   const [windowWidth, setWindowWidth] = useState({
     width: window.innerWidth,
-    breakPoint: 768,
+    breakPoint: 1280,
   })
   useEffect(() => {
     window.addEventListener("resize", handleResizeWindow)
