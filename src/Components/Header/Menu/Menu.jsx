@@ -7,16 +7,12 @@ import { NavLink, useLocation } from "react-router-dom"
 import styles from "./Menu.module.scss"
 import Donate from "../../Donate"
 
-const Menu = ({ onToggleModal }) => {
+const Menu = () => {
   const { t, i18n } = useTranslation()
 
   const { pathname } = useLocation()
 
-  const closeModal = () => (onToggleModal ? onToggleModal() : "")
-
-  useEffect(() => {
-    closeModal()
-  }, [pathname]) /* eslint-disable-line*/
+  useEffect(() => {}, [pathname]) /* eslint-disable-line*/
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language)
