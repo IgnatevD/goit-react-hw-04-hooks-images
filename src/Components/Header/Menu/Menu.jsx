@@ -7,9 +7,8 @@ import { NavLink, useLocation } from "react-router-dom"
 import styles from "./Menu.module.scss"
 import Donate from "../../Donate"
 
-const Menu = () => {
+const Menu = ({ onToggleModal }) => {
   const { t, i18n } = useTranslation()
-
   const { pathname } = useLocation()
 
   useEffect(() => {}, [pathname]) /* eslint-disable-line*/
@@ -24,6 +23,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
@@ -33,6 +33,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/about'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
@@ -42,6 +43,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/activities'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
@@ -51,6 +53,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/program'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
@@ -60,6 +63,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/team'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
@@ -69,6 +73,7 @@ const Menu = () => {
         <li className={styles.item__menu}>
           <NavLink
             to='/contacts'
+            onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
