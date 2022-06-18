@@ -2,6 +2,7 @@
 
 .section {
   padding-top: 20px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
@@ -305,4 +306,8 @@
     color: var(--color-main-background);
     background-color: var(--color-hover-btn);
   }
+}
+
+.btn__donate {
+  margin-top: 0 auto;
 }

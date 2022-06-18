@@ -1,7 +1,7 @@
 /** @format */
 
-import React, { useContext } from "react"
-import { Context } from "../../../utils/context"
+import React from "react"
+
 import Container from "../../Container"
 
 import humanitarianAid from "../../../image/pictures/humanitarianAid.png"
@@ -13,9 +13,9 @@ import styles from "./Achievements.module.scss"
 
 const Achievements = () => {
   const { t } = useTranslation()
-  const { achievements } = useContext(Context)
+
   return (
-    <section className={styles.section} ref={achievements}>
+    <section className={styles.section}>
       <Container>
         <h2 className={styles.title}>{t("section.achievements.title")}</h2>
         <p className={styles.description}>

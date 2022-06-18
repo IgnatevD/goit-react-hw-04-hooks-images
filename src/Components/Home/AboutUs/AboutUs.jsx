@@ -1,7 +1,6 @@
 /** @format */
 
-import React, { useContext, useState } from "react"
-import { Context } from "../../../utils/context"
+import React, { useState } from "react"
 import Container from "../../Container"
 import allTeams from "../../../image/aboutUs/allTeams.jpg"
 import car from "../../../image/aboutUs/car.jpg"
@@ -16,10 +15,9 @@ import styles from "./AboutUs.module.scss"
 const AboutUs = () => {
   const [img, setImg] = useState({ img: allTeams, class: " " })
   const { t } = useTranslation()
-  const { aboutUs } = useContext(Context)
 
   return (
-    <section className={styles.section} ref={aboutUs}>
+    <section className={styles.section}>
       <Container>
         <h2 className={styles.title}>{t("section.aboutUs.title")}</h2>
         <p className={styles.description}>{t("section.aboutUs.description")}</p>

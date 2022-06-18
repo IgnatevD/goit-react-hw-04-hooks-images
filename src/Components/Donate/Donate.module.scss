@@ -1,0 +1,29 @@
+/** @format */
+
+.btn__donate {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px 10px;
+  font-size: 24px;
+  background: var(--color-diagram-need);
+  color: var(--color-footer-background);
+  border-radius: 10px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    margin-top: 0;
+
+    margin-right: 25px;
+    &:hover,
+    :focus,
+    :active {
+      transform: scale(1.1);
+      background: var(--color-footer-background);
+      color: var(--color-diagram-need);
+    }
+  }
+}
