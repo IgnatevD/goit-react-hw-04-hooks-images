@@ -37,3 +37,11 @@
     width: 100%;
   }
 }
+
+.donate {
+  @media screen and (min-width: 1280px) {
+    margin-left: 50px;
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+}
