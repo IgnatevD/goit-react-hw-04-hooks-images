@@ -22,16 +22,6 @@ const Menu = ({ onToggleModal = false }) => {
       <ul className={styles.list__menu}>
         <li className={styles.item__menu}>
           <NavLink
-            to='/'
-            onClick={onToggleModal}
-            className={({ isActive }) =>
-              !isActive ? styles.link : styles.linkActive
-            }>
-            ГОЛОВНА
-          </NavLink>
-        </li>
-        <li className={styles.item__menu}>
-          <NavLink
             to='/about'
             onClick={onToggleModal}
             className={({ isActive }) =>
@@ -40,7 +30,7 @@ const Menu = ({ onToggleModal = false }) => {
             {t("navigation.aboutUs")}
           </NavLink>
         </li>
-        <li className={styles.item__menu}>
+        {/* <li className={styles.item__menu}>
           <NavLink
             to='/activities'
             onClick={onToggleModal}
@@ -49,25 +39,25 @@ const Menu = ({ onToggleModal = false }) => {
             }>
             {t("navigation.activities")}
           </NavLink>
-        </li>
+        </li> */}
         <li className={styles.item__menu}>
           <NavLink
-            to='/program'
+            to='/projects'
             onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
-            {t("navigation.program")}
+            {t("navigation.projects")}
           </NavLink>
         </li>
         <li className={styles.item__menu}>
           <NavLink
-            to='/team'
+            to='/repoting'
             onClick={onToggleModal}
             className={({ isActive }) =>
               !isActive ? styles.link : styles.linkActive
             }>
-            {t("navigation.team")}
+            {t("navigation.repot")}
           </NavLink>
         </li>
         <li className={styles.item__menu}>
