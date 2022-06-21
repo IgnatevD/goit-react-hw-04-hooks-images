@@ -1,7 +1,6 @@
 /** @format */
 
-import React, { useContext } from "react"
-import { Context } from "../../utils/context"
+import React from "react"
 import Container from "../Container"
 import Requisites from "../Requisites"
 import Networks from "./Networks"
@@ -11,8 +10,6 @@ import Svg from "../Svg"
 
 const Footer = () => {
   const { t, i18n } = useTranslation()
-
-  const { contacts } = useContext(Context)
 
   const networkLink = [
     {
@@ -36,7 +33,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className={styles.footer} ref={contacts}>
+    <footer className={styles.footer}>
       <Container>
         <div className={styles.contacts}>
           <div className={styles.container__logo}>
