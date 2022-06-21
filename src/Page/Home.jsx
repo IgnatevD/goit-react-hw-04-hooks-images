@@ -3,19 +3,15 @@
 import React from "react"
 import Hero from "../Components/Home/Hero"
 import AboutUs from "../Components/Home/AboutUs"
-import Achievements from "../Components/Home/Achievements"
-import Program from "../Components/Home/Program"
-import Team from "../Components/Home/Team"
 import OurPartners from "../Components/Home/OurPartners"
+import VideoIframe from "../Components/Home/VideoIframe"
 
 const Home = () => {
   return (
     <>
       <Hero />
       <AboutUs />
-      <Achievements />
-      <Program />
-      <Team />
+      <VideoIframe />
       <OurPartners />
     </>
   )

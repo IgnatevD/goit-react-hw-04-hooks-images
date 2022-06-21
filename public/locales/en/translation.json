@@ -4,7 +4,8 @@
     "achievements": "ACHIEVEMEATS",
     "activities": "ACTIVITIES",
     "team": "TEAM",
-    "program": "PROGRAM",
+    "projects": "PRJECTS",
+    "repot": "REPORTING",
     "contacts": "CONTACTS"
   },
   "section": {
@@ -162,6 +163,34 @@
     },
     "ourPartners": {
       "title": "Our partners and friends"
+    },
+    "projects": {
+      "title": "Проекти",
+      "saveLife": {
+        "title": "Зберегти життя",
+        "description": "-забезпечення харків'ян та біженців продуктовими наборами",
+        "allDescription": " "
+      },
+      "callCenter": {
+        "title": "Єдиний інформаційний колл центр 5505",
+        "description": "-консультація з питань: евакуації, продуктової допомоги, медичної та психологічної допомоги, юридична консультація",
+        "allDescription": " "
+      },
+      "misceCalm": {
+        "title": "Місце спокою",
+        "description": "-cтворення районних центрів допомоги.",
+        "allDescription": " "
+      },
+      "HealthyKharkivyan": {
+        "title": "Здоров'я Харків'ян",
+        "description": "- медична консультація онлайн + лікар на районі та доставка ліків.",
+        "allDescription": " "
+      },
+      "hearUkraine": {
+        "title": "Почути Україну",
+        "description": "- допомога людям із проблемами слуху, які з'явились через війну.",
+        "allDescription": " "
+      }
     },
 
     "contacts": {

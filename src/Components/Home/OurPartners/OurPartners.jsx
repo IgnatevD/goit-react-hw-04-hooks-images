@@ -10,6 +10,7 @@ import roma_logo from "../../../image/partner/roma_logo.png"
 
 
 import styles from "./OurPartners.module.scss"
+import Section from "../../Section"
 
 const OurPartners = () => {
   const { t } = useTranslation()
@@ -30,7 +31,7 @@ const OurPartners = () => {
   ]
 
   return (
-    <section className={styles.section}>
+    <Section className={styles.ourPartners__section}>
       <Container className={styles.ourPartners__container}>
         <h2 className={styles.title}>{t("section.ourPartners.title")}</h2>
 
@@ -46,7 +47,7 @@ const OurPartners = () => {
           ))}
         </ul>
       </Container>
-    </section>
+    </Section>
   )
 }
 

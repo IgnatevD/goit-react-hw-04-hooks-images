@@ -1,5 +1,9 @@
 /** @format */
-
+.section__hero {
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+  }
+}
 .hero,
 .hero__en {
   position: relative;
@@ -16,7 +20,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 600px;
+    height: 500px;
   }
 }
 

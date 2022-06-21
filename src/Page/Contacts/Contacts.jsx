@@ -33,7 +33,7 @@ const Contacts = () => {
   ]
 
   return (
-    <section className={styles.footer}>
+    <div className={styles.page__contacts}>
       <Container>
         <div className={styles.contacts}>
           <div className={styles.container__logo}>
@@ -64,7 +64,7 @@ const Contacts = () => {
         </div>
       </Container>
       <Team />
-    </section>
+    </div>
   )
 }
 

@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Container>
+      <Container className={styles.container__header}>
         <div className={styles.container}>
           <NavLink to='/'>
             <Svg

@@ -11,13 +11,14 @@ import stock from "../../../image/aboutUs/stock.jpg"
 import { useTranslation } from "react-i18next"
 import StatisticsPlate from "../StatisticsPlate"
 import styles from "./AboutUs.module.scss"
+import Section from "../../Section"
 
 const AboutUs = () => {
   const [img, setImg] = useState({ img: allTeams, class: " " })
   const { t } = useTranslation()
 
   return (
-    <section className={styles.section}>
+    <Section>
       <Container>
         <h2 className={styles.title}>{t("section.aboutUs.title")}</h2>
         <p className={styles.description}>{t("section.aboutUs.description")}</p>
@@ -103,16 +104,8 @@ const AboutUs = () => {
             className={img.class}
           />
         </div>
-        <div className={styles.tumb__video}>
-          <iframe
-            className={styles.video}
-            src='https://www.youtube.com/embed/ugMz1uxshV8'
-            title='Yellow Help'
-            frameBorder='0'
-            allowFullScreen></iframe>
-        </div>
       </Container>
-    </section>
+    </Section>
   )
 }
 
