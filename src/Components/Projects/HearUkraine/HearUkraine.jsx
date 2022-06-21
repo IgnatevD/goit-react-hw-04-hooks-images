@@ -15,17 +15,17 @@ const HearUkraine = () => {
       <div className={styles.container}>
         <h2> {t("section.projects.hearUkraine.title")}</h2>
         <p> {t("section.projects.hearUkraine.description")}</p>
-        <Button
-          onClick={() => setMoreInfo((prev) => !prev)}
-          className={styles.btn__more}>
-          {moreInfo ? "Сховати" : "Докладніше"}
-        </Button>
       </div>
       {moreInfo && (
         <div>
           <p> {t("section.projects.hearUkraine.description")}</p>
         </div>
       )}
+      <Button
+        onClick={() => setMoreInfo((prev) => !prev)}
+        className={styles.btn__more}>
+        {moreInfo ? "Сховати" : "Докладніше"}
+      </Button>
     </>
   )
 }

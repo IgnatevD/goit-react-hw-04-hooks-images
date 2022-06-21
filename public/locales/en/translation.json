@@ -4,7 +4,7 @@
     "achievements": "ACHIEVEMEATS",
     "activities": "ACTIVITIES",
     "team": "TEAM",
-    "projects": "PRJECTS",
+    "projects": "PROJECTS",
     "repot": "REPORTING",
     "contacts": "CONTACTS"
   },
@@ -165,7 +165,7 @@
       "title": "Our partners and friends"
     },
     "projects": {
-      "title": "Проекти",
+      "title": "Projects",
       "saveLife": {
         "title": "Зберегти життя",
         "description": "-забезпечення харків'ян та біженців продуктовими наборами",
