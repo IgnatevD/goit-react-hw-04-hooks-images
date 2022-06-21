@@ -15,17 +15,17 @@ const SaveLife = () => {
       <div className={styles.container}>
         <h2> {t("section.projects.saveLife.title")}</h2>
         <p> {t("section.projects.saveLife.description")}</p>
-        <Button
-          onClick={() => setMoreInfo((prev) => !prev)}
-          className={styles.btn__more}>
-          {moreInfo ? "Сховати" : "Докладніше"}
-        </Button>
       </div>
       {moreInfo && (
         <div>
           <p> {t("section.projects.saveLife.description")}</p>
         </div>
       )}
+      <Button
+        onClick={() => setMoreInfo((prev) => !prev)}
+        className={styles.btn__more}>
+        {moreInfo ? "Сховати" : "Докладніше"}
+      </Button>
     </>
   )
 }

@@ -15,17 +15,17 @@ const MisceCalm = () => {
       <div className={styles.container}>
         <h2> {t("section.projects.misceCalm.title")}</h2>
         <p> {t("section.projects.misceCalm.description")}</p>
-        <Button
-          onClick={() => setMoreInfo((prev) => !prev)}
-          className={styles.btn__more}>
-          {moreInfo ? "Сховати" : "Докладніше"}
-        </Button>
       </div>
       {moreInfo && (
         <div>
           <p> {t("section.projects.misceCalm.description")}</p>
         </div>
       )}
+      <Button
+        onClick={() => setMoreInfo((prev) => !prev)}
+        className={styles.btn__more}>
+        {moreInfo ? "Сховати" : "Докладніше"}
+      </Button>
     </>
   )
 }
