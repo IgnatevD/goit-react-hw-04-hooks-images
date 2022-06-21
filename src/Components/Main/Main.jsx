@@ -8,10 +8,9 @@ import Home from "../../Page/Home"
 import OthersFunds from "../../Page/OthersFunds"
 import AboutUsAndTeams from "../../Page/AboutUsAndTeams"
 
-import Team from "../Home/Team"
-
 import styles from "./Main.module.scss"
 import Projects from "../../Page/Projects"
+import Reports from "../../Page/Reports"
 
 const Main = () => {
   return (
@@ -20,7 +19,7 @@ const Main = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUsAndTeams />} />
         <Route path='/others' element={<OthersFunds />} />
-        <Route path='/repoting' element={<Team />} />
+        <Route path='/repoting' element={<Reports />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/activities' element={<Activities />} />

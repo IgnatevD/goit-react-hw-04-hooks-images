@@ -30,12 +30,12 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   @media screen and (min-width: 768px) {
-    width: 350px;
+    width: 250px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-right: 100px;
+    margin-right: 60px;
   }
 }
 
@@ -50,8 +50,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 160px;
   }
 }
 
@@ -67,7 +67,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 240px;
-    font-size: 22px;
+    font-size: 14px;
   }
 }
 
@@ -92,7 +92,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -118,12 +118,10 @@
   font-size: 14px;
   font-weight: 500;
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 0px;
-
-    font-size: 24px;
   }
 }
 

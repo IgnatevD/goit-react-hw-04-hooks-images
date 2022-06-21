@@ -2,7 +2,7 @@
 
 .network__item {
   @media screen and (min-width: 1280px) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -31,8 +31,6 @@
   }
   @media screen and (min-width: 1280px) {
     margin-right: 20px;
-    width: 40px;
-    height: 40px;
     transition: 300ms linear;
   }
 }
@@ -53,7 +51,7 @@
   @media screen and (min-width: 1280px) {
     display: block;
 
-    font-size: 22px;
+    font-size: 18px;
     color: var(--color-diagram-need);
   }
 }
