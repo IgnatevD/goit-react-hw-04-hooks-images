@@ -2,6 +2,7 @@
 
 import React from "react"
 import Container from "../../Components/Container"
+import Section from "../../Components/Section"
 import styles from "./OthersFunds.module.scss"
 
 const financialFunds = [
@@ -181,7 +182,7 @@ const humanitarianFunds = [
 const OthersFunds = () => {
   const blank = "_blank"
   return (
-    <section className={styles.section}>
+    <Section className={styles.section}>
       <Container>
         <div className={styles.container}>
           <div>
@@ -234,7 +235,7 @@ const OthersFunds = () => {
           <p> Давайте допомагати один одному!</p>
         </div>
       </Container>
-    </section>
+    </Section>
   )
 }
 
