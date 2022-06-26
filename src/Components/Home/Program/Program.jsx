@@ -8,14 +8,14 @@ import { Link } from "react-router-dom"
 import styles from "./Program.module.scss"
 import Section from "../../Section"
 
-const Program = () => {
+const Program = ({ className }) => {
   const { t } = useTranslation()
   const blank = "_blank"
   const self = "_self"
 
   return (
     <Section className={styles.section}>
-      <Container>
+      <Container className={className}>
         <h2 className={styles.program__title}>{t("section.program.title")}</h2>
         <div className={styles.container__description}>
           <p className={styles.program__description}>
