@@ -19,6 +19,9 @@
       "bus": "large buses with 50 seats",
       "miniBus": "minibuses with 16 seats"
     },
+    "instagramWidget": {
+      "title": "OUR INSTAGRAM"
+    },
 
     "achievements": {
       "title": "Our achievements in a month",
