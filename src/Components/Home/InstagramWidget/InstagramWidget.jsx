@@ -16,7 +16,7 @@ const InstagramWidget = () => {
         <div className={styles.tumb__instagram}>
           <iframe
             title='My instagram'
-            src='//lightwidget.com/widgets/036f4ffb0a1b5a4fa7e2e3469c646dc4.html'
+            src='//lightwidget.com/widgets/cca06fa117d05edb9b8d6384be8175bb.html'
             scrolling='no'
             allowtransparency='true'
             className='lightwidget-widget'
