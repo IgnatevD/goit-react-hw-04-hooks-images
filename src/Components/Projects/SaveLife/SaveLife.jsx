@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import Button from "../../Button"
+import Program from "../../Home/Program"
 
 import styles from "./SaveLife.module.scss"
 
@@ -18,7 +19,7 @@ const SaveLife = () => {
       </div>
       {moreInfo && (
         <div>
-          <p> {t("section.projects.saveLife.description")}</p>
+          <Program className={styles.container__description} />
         </div>
       )}
       <Button
