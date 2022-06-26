@@ -7,6 +7,7 @@ import styles from "./Contacts.module.scss"
 import Networks from "../../Components/Footer/Networks"
 import Team from "../../Components/Home/Team"
 import Requisites from "../../Components/Requisites"
+import Section from "../../Components/Section"
 
 const Contacts = () => {
   const { t } = useTranslation()
@@ -34,35 +35,38 @@ const Contacts = () => {
 
   return (
     <div className={styles.page__contacts}>
-      <Container>
-        <div className={styles.contacts}>
-          <div className={styles.container__logo}>
-            <h3 className={styles.name__organization}>
-              {t("section.contacts.nameOrganization")}
-            </h3>
-            <p className={styles.address}>{t("section.contacts.address")}</p>
-          </div>
-          <div className={styles.container__contacts}>
-            <div className={styles.container__network}>
-              <a href='tel:+380662268855' className={styles.telephone__link}>
-                +38(066)226-88-55
-              </a>
-              <ul className={styles.network__list}>
-                {networkLink.map(({ tagrget, link, icon, name }, index) => (
-                  <Networks
-                    tagrget={tagrget}
-                    link={link}
-                    icon={icon}
-                    name={name}
-                    key={index}
-                  />
-                ))}
-              </ul>
+      <Section>
+        <Container>
+          <div className={styles.contacts}>
+            <div className={styles.container__logo}>
+              <h3 className={styles.name__organization}>
+                {t("section.contacts.nameOrganization")}
+              </h3>
+              <p className={styles.address}>{t("section.contacts.address")}</p>
             </div>
+            <div className={styles.container__contacts}>
+              <div className={styles.container__network}>
+                <a href='tel:+380662268855' className={styles.telephone__link}>
+                  +38(066)226-88-55
+                </a>
+                <ul className={styles.network__list}>
+                  {networkLink.map(({ tagrget, link, icon, name }, index) => (
+                    <Networks
+                      tagrget={tagrget}
+                      link={link}
+                      icon={icon}
+                      name={name}
+                      key={index}
+                    />
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <Requisites className={styles.requisites} />
           </div>
-          <Requisites className={styles.requisites} />
-        </div>
-      </Container>
+        </Container>
+      </Section>
+
       <Team />
     </div>
   )

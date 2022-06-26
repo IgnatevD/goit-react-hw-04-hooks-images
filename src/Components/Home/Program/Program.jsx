@@ -1,21 +1,20 @@
 /** @format */
 
-import React, { useContext } from "react"
-import { Context } from "../../../utils/context"
+import React from "react"
 import Container from "../../Container"
 import { useTranslation } from "react-i18next"
 import StatisticsPlate from "../StatisticsPlate"
 import { Link } from "react-router-dom"
 import styles from "./Program.module.scss"
+import Section from "../../Section"
 
 const Program = () => {
-  const { program } = useContext(Context)
   const { t } = useTranslation()
   const blank = "_blank"
   const self = "_self"
 
   return (
-    <section className={styles.section} ref={program}>
+    <Section className={styles.section}>
       <Container>
         <h2 className={styles.program__title}>{t("section.program.title")}</h2>
         <div className={styles.container__description}>
@@ -102,7 +101,7 @@ const Program = () => {
           Отримати допомогу від інших фондів
         </Link>
       </Container>
-    </section>
+    </Section>
   )
 }
 

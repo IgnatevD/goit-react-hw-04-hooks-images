@@ -20,6 +20,9 @@
       "bus": "великих автобуси по 50 місць",
       "miniBus": "мікроавтобуси по 16 місць"
     },
+    "instagramWidget": {
+      "title": "НАШ INSTAGRAM"
+    },
 
     "achievements": {
       "title": "Наші досягнення за місяць",
