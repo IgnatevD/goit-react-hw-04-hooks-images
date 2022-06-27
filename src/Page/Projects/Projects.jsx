@@ -26,35 +26,55 @@ const Projects = () => {
             <ul className={styles.list__project}>
               <li className={styles.project__button}>
                 <Button
-                  className={styles.project__title}
+                  className={
+                    activeProject === "saveLife"
+                      ? styles.project__title__active
+                      : styles.project__title
+                  }
                   onClick={() => setActiveProject("saveLife")}>
                   {t("section.projects.saveLife.title")}
                 </Button>
               </li>
               <li className={styles.project__button}>
                 <Button
-                  className={styles.project__title}
+                  className={
+                    activeProject === "callCenter"
+                      ? styles.project__title__active
+                      : styles.project__title
+                  }
                   onClick={() => setActiveProject("callCenter")}>
                   {t("section.projects.callCenter.title")}
                 </Button>
               </li>
               <li className={styles.project__button}>
                 <Button
-                  className={styles.project__title}
+                  className={
+                    activeProject === "misceCalm"
+                      ? styles.project__title__active
+                      : styles.project__title
+                  }
                   onClick={() => setActiveProject("misceCalm")}>
                   {t("section.projects.misceCalm.title")}
                 </Button>
               </li>
               <li className={styles.project__button}>
                 <Button
-                  className={styles.project__title}
+                  className={
+                    activeProject === "HealthyKharkivyan"
+                      ? styles.project__title__active
+                      : styles.project__title
+                  }
                   onClick={() => setActiveProject("HealthyKharkivyan")}>
                   {t("section.projects.HealthyKharkivyan.title")}
                 </Button>
               </li>
               <li className={styles.project__button}>
                 <Button
-                  className={styles.project__title}
+                  className={
+                    activeProject === "hearUkraine"
+                      ? styles.project__title__active
+                      : styles.project__title
+                  }
                   onClick={() => setActiveProject("hearUkraine")}>
                   {t("section.projects.hearUkraine.title")}
                 </Button>
