@@ -8,15 +8,17 @@
   border-radius: 15px;
   object-fit: contain;
   overflow: hidden;
+  height: 200px;
 
   @media screen and (min-width: 768px) {
     margin-top: 15px;
+    height: 320px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
     width: 1210px;
-    height: 411px;
+    height: 460px;
   }
 }
 

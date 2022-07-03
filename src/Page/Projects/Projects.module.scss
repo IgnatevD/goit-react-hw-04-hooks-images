@@ -1,6 +1,11 @@
 /** @format */
 .container {
   @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1210px;
     padding-top: 150px;
     padding-bottom: 100px;
   }
@@ -16,6 +21,15 @@
 }
 
 .list__project {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 320px) {
+    box-sizing: border-box;
+    width: 100%;
+  }
   @media screen and (min-width: 1280px) {
     width: auto;
   }
@@ -28,10 +42,14 @@
   background-color: var(--color-diagram-need);
   color: var(--color-btn);
   border-radius: 10px;
-  width: 300px;
-  &:hover {
-    background-color: var(--color-btn);
-    color: var(--color-diagram-need);
+  width: 100%;
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    :focus,
+    :active {
+      background-color: var(--color-btn);
+      color: var(--color-diagram-need);
+    }
   }
 }
 
@@ -42,10 +60,14 @@
   background-color: var(--color-btn);
   color: var(--color-diagram-need);
   border-radius: 10px;
-  width: 300px;
-  &:hover {
-    background-color: var(--color-diagram-need);
-    color: var(--color-btn);
+  width: 100%;
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    :focus,
+    :active {
+      background-color: var(--color-diagram-need);
+      color: var(--color-btn);
+    }
   }
 }
 
@@ -62,13 +84,9 @@
   margin-right: auto;
   text-align: left;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-
   @media screen and (min-width: 768px) {
     margin: 0;
-    width: 550px;
+    width: 100%;
   }
   @media screen and (min-width: 1280px) {
     text-align: right;

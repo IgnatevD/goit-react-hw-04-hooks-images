@@ -17,7 +17,7 @@ const MisceCalm = () => {
         <p> {t("section.projects.misceCalm.description")}</p>
       </div>
       {moreInfo && (
-        <div>
+        <div className={styles.description}>
           <p> {t("section.projects.misceCalm.description")}</p>
         </div>
       )}
