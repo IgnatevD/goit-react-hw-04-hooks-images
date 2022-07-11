@@ -14,12 +14,12 @@ const VideoIframe = () => {
             className={styles.video}
             src='https://www.youtube.com/embed/ugMz1uxshV8'
             title='Yellow Help'
-            frameBorder='0'
-            allowFullScreen></iframe>
+            frameBorder='0'></iframe>
         </div>
       </Container>
     </Section>
   )
 }
+// allowFullScreen
 
 export default VideoIframe
