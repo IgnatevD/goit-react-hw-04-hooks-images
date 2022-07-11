@@ -7,10 +7,9 @@ import Contacts from "../../Page/Contacts"
 import Home from "../../Page/Home"
 import OthersFunds from "../../Page/OthersFunds"
 import AboutUsAndTeams from "../../Page/AboutUsAndTeams"
-
-import styles from "./Main.module.scss"
 import Projects from "../../Page/Projects"
 import Reports from "../../Page/Reports"
+import styles from "./Main.module.scss"
 
 const Main = () => {
   return (
