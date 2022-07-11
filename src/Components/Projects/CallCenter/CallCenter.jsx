@@ -2,12 +2,19 @@
 
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
+import useAnalyticsEventTracker from "../../../utils/useAnalyticsEventTracker"
 import Button from "../../Button"
 import styles from "./CallCenter.module.scss"
 
 const CallCenter = () => {
   const [moreInfo, setMoreInfo] = useState(false)
   const { t } = useTranslation()
+  const gaEventTracker = useAnalyticsEventTracker("CallCenterMore")
+
+  const clickBtnMore = () => {
+    setMoreInfo((prev) => !prev)
+    gaEventTracker("CallCenterClickMore")
+  }
 
   return (
     <>
@@ -20,9 +27,7 @@ const CallCenter = () => {
           <p> {t("section.projects.callCenter.description")}</p>
         </div>
       )}
-      <Button
-        onClick={() => setMoreInfo((prev) => !prev)}
-        className={styles.btn__more}>
+      <Button onClick={clickBtnMore} className={styles.btn__more}>
         {moreInfo ? "Сховати" : "Докладніше"}
       </Button>
     </>

@@ -1,6 +1,7 @@
 /** @format */
 
-import React from "react"
+import React, { useEffect } from "react"
+import ReactGA from "react-ga"
 import Container from "../../Components/Container"
 import { useTranslation } from "react-i18next"
 import styles from "./Contacts.module.scss"
@@ -32,6 +33,10 @@ const Contacts = () => {
       name: "t.me/yellow_help",
     },
   ]
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <div className={styles.page__contacts}>

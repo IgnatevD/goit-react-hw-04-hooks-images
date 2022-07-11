@@ -1,6 +1,8 @@
 /** @format */
 
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
+import ReactGA from "react-ga"
+
 import { useTranslation } from "react-i18next"
 import Button from "../../Components/Button"
 
@@ -16,6 +18,9 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState("saveLife")
 
   const { t } = useTranslation()
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <div className={styles.container}>
