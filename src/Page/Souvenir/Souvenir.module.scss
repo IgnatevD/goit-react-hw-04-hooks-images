@@ -1,0 +1,115 @@
+/** @format */
+
+.container {
+  @media screen and (min-width: 1280px) {
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+}
+.title {
+  font-size: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+.gift__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+.gift {
+  margin-top: 10px;
+  font-weight: 600;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+}
+.gift__text {
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+}
+.gift__description {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+.donate {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+.link {
+  padding: 0px 5px;
+  font-weight: 600;
+  font-size: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.tumb__img {
+  margin-top: 10px;
+  border-radius: 15px;
+  object-fit: contain;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    width: 510px;
+    height: 311px;
+  }
+}

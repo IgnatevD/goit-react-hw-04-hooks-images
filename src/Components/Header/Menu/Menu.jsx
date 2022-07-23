@@ -52,6 +52,16 @@ const Menu = ({ onToggleModal = false }) => {
         </li>
         <li className={styles.item__menu}>
           <NavLink
+            to='/souvenir'
+            onClick={onToggleModal}
+            className={({ isActive }) =>
+              !isActive ? styles.link : styles.linkActive
+            }>
+            {t("navigation.souvenir")}
+          </NavLink>
+        </li>
+        <li className={styles.item__menu}>
+          <NavLink
             to='/repoting'
             onClick={onToggleModal}
             className={({ isActive }) =>

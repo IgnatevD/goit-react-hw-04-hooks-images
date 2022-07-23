@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <Hero />
       <AboutUs />
-      <VideoIframe />
+      <VideoIframe url='https://www.youtube.com/embed/ugMz1uxshV8' />
       <InstagramWidget />
       <OurPartners />
     </>
