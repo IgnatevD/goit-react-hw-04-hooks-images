@@ -11,6 +11,7 @@ import Projects from "../../Page/Projects"
 import Reports from "../../Page/Reports"
 import Food from "../../Page/Food/Food"
 import styles from "./Main.module.scss"
+import Souvenir from "../../Page/Souvenir"
 
 const Main = () => {
   return (
@@ -24,6 +25,8 @@ const Main = () => {
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/activities' element={<Activities />} />
         <Route path='/food' element={<Food />} />
+        <Route path='/souvenir' element={<Souvenir />} />
+
         <Route path='*' element={<h2> Not found page</h2>} />
       </Routes>
     </main>
