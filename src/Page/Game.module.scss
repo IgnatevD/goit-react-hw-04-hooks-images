@@ -1,0 +1,317 @@
+/** @format */
+.mainContainer {
+  background: #0a78d1;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  height: 100%;
+}
+
+.draggableContainer {
+  height: 150px;
+  width: 100px;
+  background-color: white;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &.dragging {
+    opacity: 0.5;
+  }
+}
+
+.containerImage {
+  height: 100%;
+  width: auto;
+}
+
+.dropZone {
+  height: 150px;
+  width: 100px;
+  margin: 8px;
+  background-color: white;
+  border: 2px dashed gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &.over {
+    background-color: lightgreen;
+  }
+}
+
+.containerList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+  height: 160px;
+  background-size: cover;
+}
+
+.dropZoneList {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.gameControls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-top: 15px;
+  color: #0a78d1;
+  background-color: #F8F9FA;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gameButton {
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.gameButtonDisabled {
+  background-color: gray;
+  color: darkgray;
+  cursor: not-allowed;
+}
+
+.summerImage {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-size: cover;
+}
+
+.summerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.phpLogo {
+  position: absolute;
+  bottom: 40px;
+  left: 330px;
+  height: 70px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.image {
+  height: 100%;
+  width: auto;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  margin: 0 10px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+}
+
+.statBoxWin {
+  background-color: green;
+}
+
+.statLabel {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.statNumber {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.statNumberWin {
+  color: white;
+}
+
+.fadeIn {
+  animation: anvilEffect 0.8s ease-in-out;
+}
+
+@keyframes anvilEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateY(10px);
+  }
+  70% {
+    transform: scale(0.9) translateY(-10px);
+  }
+  90% {
+    transform: scale(1.1) translateY(5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3498db;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #3498db;
+  animation: typewriter 2s steps(35, end) 1s 1 normal both, blink-caret 0.45s step-end infinite;
+  animation-fill-mode: both;
+  color: #3498db;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.fruit {
+  position: absolute;
+  animation-name: fall;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8),
+    0 0 30px rgba(75, 146, 248, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 215, 0, 1),
+    0 0 40px rgb(64, 104, 222);
+  }
+}
+
+@keyframes backgroundChange {
+  0%, 100% { background: rgba(100, 98, 215, 0.8); }
+  50% { background: rgba(255, 255, 0, 0.8); }
+}
+
+.winner {
+  font-size: 85px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 25px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+  z-index: 1;
+  animation: colorChange 3s linear infinite, glow 4s ease-in-out infinite, backgroundChange 4s linear infinite;
+}
