@@ -1,5 +1,6 @@
 [build]
   publish = "build"
+  node_version = "18.x"
 
 [[redirects]]
   from = "/*"
