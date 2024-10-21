@@ -32,9 +32,9 @@ const App = () => {
         scrollSection,
       }}>
       <div>
-        <Header />
+        {/*<Header />*/}
         <Main />
-        <Footer />
+        {/*<Footer />*/}
       </div>
     </Context.Provider>
   )
